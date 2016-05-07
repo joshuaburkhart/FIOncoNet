@@ -1,1 +1,6 @@
 .idea/*
+data/intact/xml/*
+data/intact/source-text.txt
+data/instruct/sapiens.sin
+data/interactome/interactions.dat
+data/reactome/FIsInGene_031516_with_annotations.txt
