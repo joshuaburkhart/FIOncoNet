@@ -32,7 +32,7 @@ class Variant:
         return sum([sum([int(self.samples[group_name][sample_name])
                  for sample_name
                  in self.samples[group_name].keys()])
-                * (len(self.samples[group_name].keys()
-                       / len(self.samples.keys())))
+                * (len(self.samples[group_name])
+                       / len(self.samples))
                 for group_name
-                in self.samples.keys()]) / len(self.samples.keys().keys())
+                in self.samples.keys()]) / (sum(len(group_name)) for group_name in self.samples)
