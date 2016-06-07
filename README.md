@@ -1,6 +1,9 @@
 # FIOncoNet
 using network comparison techniques to understand oncogenic mutations
 
+## Class Diagram
+![FIOncoNet Class Diagram](doc/vis/ClassDiagram.png)
+
 ## Architecture
 ![FIOncoNet Architecture](doc/vis/Architecture.png)
 
