@@ -3,5 +3,5 @@ package lib;
 /**
  * Created by burkhart on 6/7/16.
  */
-public class Isoform implements IIsoform {
+public class Isoform extends Entity implements IIsoform {
 }

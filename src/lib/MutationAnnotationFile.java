@@ -3,5 +3,5 @@ package lib;
 /**
  * Created by burkhart on 6/7/16.
  */
-public class MutationAnnotationFile implements IVariantFile {
+public class MutationAnnotationFile extends VariantFile {
 }
