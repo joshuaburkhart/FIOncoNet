@@ -3,7 +3,7 @@
 import sys
 from src.lib.OptionParser import OptionParser
 from src.lib.Study import Study
-from src.lib.ObjectFactory import ObjectFactory
+from src.lib.EntityBuilder import ObjectFactory
 
 S = ObjectFactory().build(Study, OptionParser(sys.argv).parse())
 
