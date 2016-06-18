@@ -8,7 +8,8 @@ using network comparison techniques to understand oncogenic mutations
 ![FIOncoNet Architecture](doc/vis/Architecture.png)
 
 ## Links
-http://www.ncbi.nlm.nih.gov/variation/docs/human_variation_vcf/
+http://www.ncbi.nlm.nih.gov/variation/docs/human_variation_vcf/  
+http://www.1000genomes.org/data  
 
 ## Usage
 ```
