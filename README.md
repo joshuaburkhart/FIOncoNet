@@ -7,6 +7,9 @@ using network comparison techniques to understand oncogenic mutations
 ## Architecture
 ![FIOncoNet Architecture](doc/vis/Architecture.png)
 
+## Links
+http://www.ncbi.nlm.nih.gov/variation/docs/human_variation_vcf/
+
 ## Usage
 ```
 $ python3 serve_fi_structures.py
