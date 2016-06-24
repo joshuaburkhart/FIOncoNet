@@ -8,9 +8,8 @@ import java.util.Collection;
 public class Driver {
 
     ExecutionState execState;
-    IVariantFileParser variantFileParser;
     Collection<IVariantFile> variantFiles;
-    Collection<IExternalDatabase> externalDatabaseFiles;
+    Collection<IPairwiseInteractionDataSource> pairwiseInteractionDataFiles;
     IReportGenerator reportGenerator;
     ILogger logger;
 
@@ -26,21 +25,23 @@ public class Driver {
     public void run(){
         switch(this.execState){
             case SingleGroup:
+                Collection<IEntity> variants;
                 Collection<IEntity> genes;
                 Collection<IEntity> isoforms;
                 Collection<IEntity> pairwiseInteractions;
 
                 this.logger.Log(LoggingLevel.INFO,"add variants to builder");
                 for(IVariantFile variantFile : variantFiles) {
-                    EntityBuilder.Instance().AddVariants(variantFileParser.ParseVariantsFromFile(variantFile));
+                    EntityBuilder.Instance().AddVariants(variantFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"add database to builder");
-                for(IExternalDatabase externalDatabaseFile : externalDatabaseFiles) {
-                    EntityBuilder.Instance().AddPairwiseInteractionDatabase(externalDatabaseFile);
+                for(IPairwiseInteractionDataSource pairwiseInteractionDataFile : pairwiseInteractionDataFiles) {
+                    EntityBuilder.Instance().AddPairwiseInteractions(pairwiseInteractionDataFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"build nodes");
+                variants = EntityBuilder.Instance().GetVariants();
                 genes = EntityBuilder.Instance().GetSupportedGenes();
                 isoforms = EntityBuilder.Instance().GetSupportedIsoforms();
                 pairwiseInteractions = EntityBuilder.Instance().GetSupportedPairwiseInteractions();
@@ -53,7 +54,10 @@ public class Driver {
                     isoform.ApplyScoringFunction(ScoringFunctions.ChildScoreSum);
                 }
                 for(IEntity gene : genes){
-                    gene.ApplyScoringFunction(ScoringFunctions.CountChildren);
+                    gene.ApplyScoringFunction(ScoringFunctions.ChildScoreSum);
+                }
+                for(IEntity variant : variants){
+                    variant.ApplyScoringFunction(ScoringFunctions.ONE);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"filter");

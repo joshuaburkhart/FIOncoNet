@@ -25,4 +25,10 @@ public class ScoringFunctions {
             return count;
         }
     };
+
+    public static Function<IEntity,Double> ONE = new Function<IEntity, Double>() {
+        public Double apply(IEntity entity){
+            return 1.0;
+        }
+    };
 }

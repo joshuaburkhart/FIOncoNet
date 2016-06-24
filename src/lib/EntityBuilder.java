@@ -6,15 +6,26 @@ import java.util.Collection;
  * Created by burkhart on 6/7/16.
  */
 public class EntityBuilder implements IEntityBuilder {
-    @Override
-    public void AddVariants(Collection<IVariant> variants) {
+    IVariantFileParser variantFileParser;
 
+    @Override
+    public void AddVariants(IVariantDataSource variantDataSource) {
+        if(variantDataSource instanceof IVariantFile) {
+            variantFileParser.ParseVariantsFromFile((IVariantFile) variantDataSource);
+        }
     }
 
     @Override
-    public void AddPairwiseInteractionDatabase(IExternalDatabase database) {
+    public void AddPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource) {
 
     }
+
+    /**
+     *
+     * @return a collection of variants
+     */
+    @Override
+    public Collection<IEntity> GetVariants() { return null; }
 
     /**
      *
