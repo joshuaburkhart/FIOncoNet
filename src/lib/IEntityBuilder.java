@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public interface IEntityBuilder {
     void AddDisconnectedVariants(IDataSourceReader variantDataSourceReader, IVariantDataSource variantDataSource);
-    void AddDisconnectedPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource);
+    void AddDisconnectedPairwiseInteractions(IDataSourceReader variantDataSourceReader, IPairwiseInteractionDataSource pairwiseInteractionDataSource);
     Collection<IEntity> GetConnectedVariants();
     Collection<IEntity> GetConnectedGenes();
     Collection<IEntity> GetConnectedIsoforms();

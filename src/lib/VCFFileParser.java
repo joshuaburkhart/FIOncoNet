@@ -2,14 +2,13 @@ package lib;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Created by burkhart on 6/7/16.
  */
-public class VCFFileParser implements IVariantFileParser {
+public class VCFFileParser implements IFileParser {
 
     private static String VCF_VARIANT_PARAMETER_CAPTURE = "^(?<chrom>[^#\\s]+)\\s+(?<pos>[^\\s]+)\\s+(?<id>[^\\s]+)\\s+(?<ref>[^\\s]+)\\s+(?<alt>[^\\s]+)\\s+(?<qual>[^\\s]+)\\s+(?<filter>[^\\s]+).*";
     private static String CHROM = "chrom";
@@ -26,7 +25,7 @@ public class VCFFileParser implements IVariantFileParser {
     }
 
     @Override
-    public Collection<IEntity> ParseVariantsFromFile(IVariantFile variantFile) {
+    public Collection<IEntity> ParseEntitiesFromFile(IVariantFile variantFile) {
         Collection<IEntity> variants = new HashSet<>();
 
         for(String line : variantFile.GetLines()){
@@ -48,6 +47,6 @@ public class VCFFileParser implements IVariantFileParser {
 
     @Override
     public Collection<IEntity> Read(IDataSource dataSource) {
-        return ParseVariantsFromFile((IVariantFile) dataSource);
+        return ParseEntitiesFromFile((IVariantFile) dataSource);
     }
 }

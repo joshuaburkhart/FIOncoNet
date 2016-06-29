@@ -9,7 +9,7 @@ public class Driver {
 
     ExecutionState execState;
     Collection<IVariantFile> variantFiles;
-    IVariantFileParser variantFileParser;
+    IFileParser variantFileParser;
     Collection<IPairwiseInteractionDataSource> pairwiseInteractionDataFiles;
     IReportGenerator reportGenerator;
     ILogger logger;

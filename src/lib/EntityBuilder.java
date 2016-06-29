@@ -23,7 +23,7 @@ public class EntityBuilder implements IEntityBuilder {
     }
 
     @Override
-    public void AddDisconnectedPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource) {
+    public void AddDisconnectedPairwiseInteractions(IDataSourceReader dataSourceReader, IPairwiseInteractionDataSource pairwiseInteractionDataSource) {
 
     }
 
