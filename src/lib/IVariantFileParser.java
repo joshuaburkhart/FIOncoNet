@@ -6,6 +6,6 @@ import java.util.Map;
 /**
  * Created by burkhart on 6/7/16.
  */
-public interface IVariantFileParser {
-    Collection<IVariant> ParseVariantsFromFile(IVariantFile variantFile);
+public interface IVariantFileParser extends IDataSourceReader {
+    Collection<IEntity> ParseVariantsFromFile(IVariantFile variantFile);
 }

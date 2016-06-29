@@ -1,22 +1,29 @@
 package lib;
 
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * Created by burkhart on 6/7/16.
  */
 public class EntityBuilder implements IEntityBuilder {
-    IVariantFileParser variantFileParser;
+    Collection<IEntity> variants;
+
+    public EntityBuilder(){
+        this.variants = new HashSet<IEntity>();
+    }
 
     @Override
-    public void AddVariants(IVariantDataSource variantDataSource) {
+    public void AddDisconnectedVariants(IDataSourceReader dataSourceReader, IVariantDataSource variantDataSource) {
         if(variantDataSource instanceof IVariantFile) {
-            variantFileParser.ParseVariantsFromFile((IVariantFile) variantDataSource);
+            this.variants.addAll(
+                    dataSourceReader.Read(variantDataSource));
         }
     }
 
     @Override
-    public void AddPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource) {
+    public void AddDisconnectedPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource) {
 
     }
 
@@ -25,14 +32,14 @@ public class EntityBuilder implements IEntityBuilder {
      * @return a collection of variants
      */
     @Override
-    public Collection<IEntity> GetVariants() { return null; }
+    public Collection<IEntity> GetConnectedVariants() { return this.variants; }
 
     /**
      *
      * @return a collection of genes, each supported by at least one variant
      */
     @Override
-    public Collection<IEntity> GetSupportedGenes() {
+    public Collection<IEntity> GetConnectedGenes() {
         return null;
     }
 
@@ -41,7 +48,7 @@ public class EntityBuilder implements IEntityBuilder {
      * @return a collection of isoforms, each supported by at least one gene
      */
     @Override
-    public Collection<IEntity> GetSupportedIsoforms() {
+    public Collection<IEntity> GetConnectedIsoforms() {
         return null;
     }
 
@@ -50,7 +57,7 @@ public class EntityBuilder implements IEntityBuilder {
      * @return a collection of pairwise interactions, each supported by at least one isoform
      */
     @Override
-    public Collection<IEntity> GetSupportedPairwiseInteractions() {
+    public Collection<IEntity> GetConnectedPairwiseInteractions() {
         return null;
     }
 

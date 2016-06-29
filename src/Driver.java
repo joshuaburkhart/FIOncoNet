@@ -9,6 +9,7 @@ public class Driver {
 
     ExecutionState execState;
     Collection<IVariantFile> variantFiles;
+    IVariantFileParser variantFileParser;
     Collection<IPairwiseInteractionDataSource> pairwiseInteractionDataFiles;
     IReportGenerator reportGenerator;
     ILogger logger;
@@ -32,19 +33,19 @@ public class Driver {
 
                 this.logger.Log(LoggingLevel.INFO,"add variants to builder");
                 for(IVariantFile variantFile : variantFiles) {
-                    EntityBuilder.Instance().AddVariants(variantFile);
+                    EntityBuilder.Instance().AddDisconnectedVariants(variantFileParser, variantFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"add database to builder");
                 for(IPairwiseInteractionDataSource pairwiseInteractionDataFile : pairwiseInteractionDataFiles) {
-                    EntityBuilder.Instance().AddPairwiseInteractions(pairwiseInteractionDataFile);
+                    EntityBuilder.Instance().AddDisconnectedPairwiseInteractions(pairwiseInteractionDataFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"build nodes");
-                variants = EntityBuilder.Instance().GetVariants();
-                genes = EntityBuilder.Instance().GetSupportedGenes();
-                isoforms = EntityBuilder.Instance().GetSupportedIsoforms();
-                pairwiseInteractions = EntityBuilder.Instance().GetSupportedPairwiseInteractions();
+                variants = EntityBuilder.Instance().GetConnectedVariants();
+                genes = EntityBuilder.Instance().GetConnectedGenes();
+                isoforms = EntityBuilder.Instance().GetConnectedIsoforms();
+                pairwiseInteractions = EntityBuilder.Instance().GetConnectedPairwiseInteractions();
 
                 this.logger.Log(LoggingLevel.INFO,"apply scoring functions");
                 for(IEntity interaction : pairwiseInteractions){

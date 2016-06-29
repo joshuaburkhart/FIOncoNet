@@ -7,10 +7,10 @@ import java.util.Map;
  * Created by burkhart on 6/7/16.
  */
 public interface IEntityBuilder {
-    void AddVariants(IVariantDataSource variantDataSource);
-    void AddPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource);
-    Collection<IEntity> GetVariants();
-    Collection<IEntity> GetSupportedGenes();
-    Collection<IEntity> GetSupportedIsoforms();
-    Collection<IEntity> GetSupportedPairwiseInteractions();
+    void AddDisconnectedVariants(IDataSourceReader variantDataSourceReader, IVariantDataSource variantDataSource);
+    void AddDisconnectedPairwiseInteractions(IPairwiseInteractionDataSource pairwiseInteractionDataSource);
+    Collection<IEntity> GetConnectedVariants();
+    Collection<IEntity> GetConnectedGenes();
+    Collection<IEntity> GetConnectedIsoforms();
+    Collection<IEntity> GetConnectedPairwiseInteractions();
 }
