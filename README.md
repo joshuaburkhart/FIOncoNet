@@ -1,17 +1,31 @@
 # FIOncoNet
 using network comparison techniques to understand oncogenic mutations
 
-## Class Diagram
+## Java Implementation
+
+### Class Diagram
 ![FIOncoNet Class Diagram](doc/vis/ClassDiagram.png)
 
-## Architecture
-![FIOncoNet Architecture](doc/vis/Architecture.png)
+### Links
 
-## Links
+#### Annotation for Release 19 (GRCh37.p13)
+http://www.gencodegenes.org/releases/19.html
+
+#### Map VCF Coordinates to Genes
+http://annovar.openbioinformatics.org/en/latest/articles/VCF/
+http://vcftools.sourceforge.net/
+https://www.biostars.org/p/77440/
+
+#### VCF
 http://www.ncbi.nlm.nih.gov/variation/docs/human_variation_vcf/  
 http://www.1000genomes.org/data  
 
-## Usage
+## Python Prototype
+
+### Architecture
+![FIOncoNet Architecture](doc/vis/Architecture.png)
+
+### Usage
 ```
 $ python3 serve_fi_structures.py
 $ python3 prepare_fi_data.py

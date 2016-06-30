@@ -1,10 +1,7 @@
 package lib;
 
-import java.util.Collection;
-
 /**
- * Created by burkhart on 6/7/16.
+ * Created by burkhart on 6/12/16.
  */
-public interface IVariantFile extends IVariantDataSource {
-    Collection<String> GetLines();
+public interface IVariantFile extends IFile {
 }

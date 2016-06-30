@@ -6,9 +6,9 @@ import java.util.Map;
 /**
  * Created by burkhart on 6/7/16.
  */
-public interface IEntityBuilder {
-    void AddDisconnectedVariants(IDataSourceReader variantDataSourceReader, IVariantDataSource variantDataSource);
-    void AddDisconnectedPairwiseInteractions(IDataSourceReader variantDataSourceReader, IPairwiseInteractionDataSource pairwiseInteractionDataSource);
+public interface IEntityNetworkBuilder {
+    void AddDisconnectedVariants(IDataSourceReader variantDataSourceReader, IDataSource variantDataSource);
+    void AddDisconnectedPairwiseInteractions(IDataSourceReader pairwiseInteractionDataSourceReader, IDataSource pairwiseInteractionDataSource);
     Collection<IEntity> GetConnectedVariants();
     Collection<IEntity> GetConnectedGenes();
     Collection<IEntity> GetConnectedIsoforms();

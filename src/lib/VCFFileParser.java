@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 /**
  * Created by burkhart on 6/7/16.
  */
-public class VCFFileParser implements IFileParser {
+public class VCFFileParser extends FileParser {
 
     private static String VCF_VARIANT_PARAMETER_CAPTURE = "^(?<chrom>[^#\\s]+)\\s+(?<pos>[^\\s]+)\\s+(?<id>[^\\s]+)\\s+(?<ref>[^\\s]+)\\s+(?<alt>[^\\s]+)\\s+(?<qual>[^\\s]+)\\s+(?<filter>[^\\s]+).*";
     private static String CHROM = "chrom";
@@ -25,7 +25,7 @@ public class VCFFileParser implements IFileParser {
     }
 
     @Override
-    public Collection<IEntity> ParseEntitiesFromFile(IVariantFile variantFile) {
+    public Collection<IEntity> ParseEntitiesFromFile(IEntityFile variantFile) {
         Collection<IEntity> variants = new HashSet<>();
 
         for(String line : variantFile.GetLines()){
@@ -43,10 +43,5 @@ public class VCFFileParser implements IFileParser {
         }
 
         return variants;
-    }
-
-    @Override
-    public Collection<IEntity> Read(IDataSource dataSource) {
-        return ParseEntitiesFromFile((IVariantFile) dataSource);
     }
 }

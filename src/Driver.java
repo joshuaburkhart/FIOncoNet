@@ -8,10 +8,12 @@ import java.util.Collection;
 public class Driver {
 
     ExecutionState execState;
-    Collection<IVariantFile> variantFiles;
-    IFileParser variantFileParser;
-    Collection<IPairwiseInteractionDataSource> pairwiseInteractionDataFiles;
+    Collection<IFile> variantFiles;
+    FileParser variantFileParser;
+    FileParser pairwiseInteractionFileParser;
+    Collection<IFile> pairwiseInteractionDataFiles;
     IReportGenerator reportGenerator;
+    IEntityNetworkBuilder entityNetworkBuilder;
     ILogger logger;
 
     public Driver(String[] args){
@@ -32,20 +34,20 @@ public class Driver {
                 Collection<IEntity> pairwiseInteractions;
 
                 this.logger.Log(LoggingLevel.INFO,"add variants to builder");
-                for(IVariantFile variantFile : variantFiles) {
-                    EntityBuilder.Instance().AddDisconnectedVariants(variantFileParser, variantFile);
+                for(IFile variantFile : variantFiles) {
+                    this.entityNetworkBuilder.AddDisconnectedVariants(variantFileParser, variantFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"add database to builder");
-                for(IPairwiseInteractionDataSource pairwiseInteractionDataFile : pairwiseInteractionDataFiles) {
-                    EntityBuilder.Instance().AddDisconnectedPairwiseInteractions(pairwiseInteractionDataFile);
+                for(IFile pairwiseInteractionDataFile : pairwiseInteractionDataFiles) {
+                    this.entityNetworkBuilder.AddDisconnectedPairwiseInteractions(pairwiseInteractionFileParser, pairwiseInteractionDataFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"build nodes");
-                variants = EntityBuilder.Instance().GetConnectedVariants();
-                genes = EntityBuilder.Instance().GetConnectedGenes();
-                isoforms = EntityBuilder.Instance().GetConnectedIsoforms();
-                pairwiseInteractions = EntityBuilder.Instance().GetConnectedPairwiseInteractions();
+                variants = this.entityNetworkBuilder.GetConnectedVariants();
+                genes = this.entityNetworkBuilder.GetConnectedGenes();
+                isoforms = this.entityNetworkBuilder.GetConnectedIsoforms();
+                pairwiseInteractions = this.entityNetworkBuilder.GetConnectedPairwiseInteractions();
 
                 this.logger.Log(LoggingLevel.INFO,"apply scoring functions");
                 for(IEntity interaction : pairwiseInteractions){
@@ -71,5 +73,6 @@ public class Driver {
             default:
                 break;
         }
+        this.logger.StopLogging();
     }
 }
