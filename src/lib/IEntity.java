@@ -8,5 +8,5 @@ import java.util.function.Function;
 public interface IEntity extends INode{
     void ApplyScoringFunction(Function<IEntity,Double> scoringFunction);
     Double GetScore();
-
+    String ToString();
 }

@@ -10,6 +10,8 @@ import java.util.function.Function;
 public abstract class Entity implements IEntity {
     protected Double score = -1.0;
     private Function<IEntity,Double> lastScoringFunction = null;
+    protected Collection<INode> parents;
+    protected Collection<INode> children;
 
     public void ApplyScoringFunction(Function<IEntity,Double> scoringFunction){
         if(scoringFunction != lastScoringFunction) {
@@ -22,10 +24,10 @@ public abstract class Entity implements IEntity {
     }
 
     public Collection<INode> GetChildren(){
-       return null;
+       return this.children;
     }
 
     public Collection<INode> GetParents(){
-        return null;
+        return this.parents;
     }
 }

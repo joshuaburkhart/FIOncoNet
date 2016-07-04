@@ -11,7 +11,7 @@ import java.util.Date;
  * Created by burkhart on 6/16/16.
  */
 public class Logger implements ILogger {
-    private static String DEFAULT_LOG_FILE_PATH = "FIOncoNet.log.txt";
+    private static String DEFAULT_LOG_FILE_PATH = "log/FIOncoNet.log.txt";
     private static String NEW_EXECUTION_BANNER = "\n//\n// New FIOncoNet Exection\n//";
     private static String LOG_FIELD_DELIMITER = "\t";
     private LoggingLevel loggingLevel;
@@ -19,7 +19,9 @@ public class Logger implements ILogger {
     private PrintWriter printWriter;
 
     public Logger(String logFilePath, LoggingLevel loggingLevel){
-        this.logFilePath = logFilePath != null? logFilePath : this.DEFAULT_LOG_FILE_PATH;
+        this.logFilePath = logFilePath != null
+                ? logFilePath
+                : this.DEFAULT_LOG_FILE_PATH;
         this.loggingLevel = loggingLevel;
         try{
             this.printWriter = new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath,true)));
@@ -37,12 +39,16 @@ public class Logger implements ILogger {
 
     private void WriteNewExecutionHeader(){
         AppendToLogFile(this.NEW_EXECUTION_BANNER);
-        AppendToLogFile(TimeStamp());
+        AppendToLogFile(StringTimeStamp() + this.LOG_FIELD_DELIMITER + LongTimeStamp());
     }
 
-    private String TimeStamp(){
+    @Override
+    public String StringTimeStamp(){
         return new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
     }
+
+    @Override
+    public long LongTimeStamp() {return System.currentTimeMillis();}
 
     private void AppendToLogFile(String line){
         this.printWriter.println(line);
@@ -52,7 +58,8 @@ public class Logger implements ILogger {
     @Override
     public void Log(LoggingLevel loggingLevel, String message) {
         if(loggingLevel.ge(this.loggingLevel)) {
-            AppendToLogFile(TimeStamp() + this.LOG_FIELD_DELIMITER +
+            AppendToLogFile(StringTimeStamp() + this.LOG_FIELD_DELIMITER +
+                    LongTimeStamp() + this.LOG_FIELD_DELIMITER +
                     loggingLevel + this.LOG_FIELD_DELIMITER +
                     message);
         }
@@ -61,7 +68,8 @@ public class Logger implements ILogger {
     @Override
     public void Log(LoggingLevel loggingLevel, String message, Exception exception) {
         if(loggingLevel.ge(this.loggingLevel)) {
-            AppendToLogFile(TimeStamp() + this.LOG_FIELD_DELIMITER +
+            AppendToLogFile(StringTimeStamp() + this.LOG_FIELD_DELIMITER +
+                    LongTimeStamp() + this.LOG_FIELD_DELIMITER +
                     loggingLevel + this.LOG_FIELD_DELIMITER +
                     message + this.LOG_FIELD_DELIMITER +
                     exception.getMessage() + this.LOG_FIELD_DELIMITER +

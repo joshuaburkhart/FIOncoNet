@@ -16,11 +16,14 @@ public class ReactomeFIFileParser extends FileParser {
     private static String DIRECTION = "direction";
     private static String SCORE = "score";
     private Pattern pattern;
+    private ILogger logger;
 
-    public ReactomeFIFileParser() { this.pattern = Pattern.compile(this.REACTOME_FI_PAIRWISE_INTERACTION_CAPTURE);}
+    public ReactomeFIFileParser(ILogger logger) {
+        this.logger = logger;
+        this.pattern = Pattern.compile(this.REACTOME_FI_PAIRWISE_INTERACTION_CAPTURE);}
 
     @Override
-    public Collection<IEntity> ParseEntitiesFromFile(IEntityFile pairwiseInteractionFile) {
+    public Collection<IEntity> ParseEntitiesFromFile(IFile pairwiseInteractionFile) {
         Collection<IEntity> pairwiseInteractions = new HashSet<>();
 
         for(String line : pairwiseInteractionFile.GetLines()){

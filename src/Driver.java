@@ -1,6 +1,7 @@
 import lib.*;
 
 import java.util.Collection;
+import java.util.HashSet;
 
 /**
  * Created by burkhart on 6/12/16.
@@ -11,7 +12,7 @@ public class Driver {
     Collection<IFile> variantFiles;
     FileParser variantFileParser;
     FileParser pairwiseInteractionFileParser;
-    Collection<IFile> pairwiseInteractionDataFiles;
+    Collection<IFile> pairwiseInteractionFiles;
     IReportGenerator reportGenerator;
     IEntityNetworkBuilder entityNetworkBuilder;
     ILogger logger;
@@ -23,6 +24,16 @@ public class Driver {
         this.reportGenerator = new ReportGenerator(options.reporting_options);
         this.execState = ExecutionStateModel.state(options.studies, options.variant_files, options.external_database_files);
          */
+        this.logger = new Logger(null,LoggingLevel.INFO);
+        this.execState = ExecutionState.SingleGroup;
+        this.variantFiles = new HashSet<>();
+        this.variantFiles.add(new MutationAnnotationFile("data/variants/IDC_lumA_dnaseq.maf",this.logger));
+        this.variantFileParser = new MAFFileParser(this.logger);
+        this.pairwiseInteractionFiles = new HashSet<>();
+        this.pairwiseInteractionFiles.add(new ReactomeFIFile("data/reactome/FIsInGene_031516_with_annotations.txt",this.logger));
+        this.pairwiseInteractionFileParser = new ReactomeFIFileParser(this.logger);
+        this.entityNetworkBuilder = new EntityNetworkBuilder(this.logger);
+        this.reportGenerator = new ReportGenerator(null,this.logger);
     }
 
     public void run(){
@@ -39,7 +50,7 @@ public class Driver {
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"add database to builder");
-                for(IFile pairwiseInteractionDataFile : pairwiseInteractionDataFiles) {
+                for(IFile pairwiseInteractionDataFile : pairwiseInteractionFiles) {
                     this.entityNetworkBuilder.AddDisconnectedPairwiseInteractions(pairwiseInteractionFileParser, pairwiseInteractionDataFile);
                 }
 

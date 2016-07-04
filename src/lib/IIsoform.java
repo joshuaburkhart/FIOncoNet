@@ -1,8 +1,14 @@
 package lib;
 
+import java.util.Collection;
+
 /**
  * Created by burkhart on 6/7/16.
  */
 public interface IIsoform extends IEntity {
-    java.util.Collection<IDomain> Domains = null;
+    Collection<IDomain> GetDomains();
+    String GetGeneSymbol();
+    void AddPairwiseInteraction(IPairwiseInteraction pairwiseInteraction);
+    Collection<IPairwiseInteraction> GetPairwiseInteractions();
+    IGene GetGene();
 }
