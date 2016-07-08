@@ -16,6 +16,7 @@ public class Driver {
     IReportGenerator reportGenerator;
     IEntityNetworkBuilder entityNetworkBuilder;
     ILogger logger;
+    IFilter filter;
 
     public Driver(String[] args){
         /*
@@ -34,6 +35,7 @@ public class Driver {
         this.pairwiseInteractionFileParser = new ReactomeFIFileParser(this.logger);
         this.entityNetworkBuilder = new EntityNetworkBuilder(this.logger);
         this.reportGenerator = new ReportGenerator(null,this.logger);
+        this.filter = new Filter(this.logger);
     }
 
     public void run(){
@@ -49,16 +51,20 @@ public class Driver {
                     this.entityNetworkBuilder.AddDisconnectedVariants(variantFileParser, variantFile);
                 }
 
-                this.logger.Log(LoggingLevel.INFO,"add database to builder");
+                this.logger.Log(LoggingLevel.INFO,"add pairwise interactions to builder");
                 for(IFile pairwiseInteractionDataFile : pairwiseInteractionFiles) {
                     this.entityNetworkBuilder.AddDisconnectedPairwiseInteractions(pairwiseInteractionFileParser, pairwiseInteractionDataFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"build nodes");
                 variants = this.entityNetworkBuilder.GetConnectedVariants();
+                this.logger.Log(LoggingLevel.INFO, variants.size() + " variants built");
                 genes = this.entityNetworkBuilder.GetConnectedGenes();
+                this.logger.Log(LoggingLevel.INFO, variants.size() + " genes built");
                 isoforms = this.entityNetworkBuilder.GetConnectedIsoforms();
+                this.logger.Log(LoggingLevel.INFO, variants.size() + " isoforms built");
                 pairwiseInteractions = this.entityNetworkBuilder.GetConnectedPairwiseInteractions();
+                this.logger.Log(LoggingLevel.INFO, variants.size() + " pairwise interactions built");
 
                 this.logger.Log(LoggingLevel.INFO,"apply scoring functions");
                 for(IEntity interaction : pairwiseInteractions){
@@ -74,16 +80,14 @@ public class Driver {
                     variant.ApplyScoringFunction(ScoringFunctions.ONE);
                 }
 
-                this.logger.Log(LoggingLevel.INFO,"filter");
-                pairwiseInteractions = Filter.Instance().TopPercentile(10.0,pairwiseInteractions);
-
-                this.logger.Log(LoggingLevel.INFO,"write results");
-                reportGenerator.WriteEntitiesToFileSystem(pairwiseInteractions);
+                this.logger.Log(LoggingLevel.INFO,"filter and write results");
+                reportGenerator.WriteEntitiesToFileSystem(filter.TopPercentile(10.0,pairwiseInteractions));
 
                 break;
             default:
                 break;
         }
+        this.logger.Log(LoggingLevel.INFO, "execution complete. shutting down");
         this.logger.StopLogging();
     }
 }

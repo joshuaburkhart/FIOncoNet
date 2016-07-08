@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by burkhart on 6/16/16.
@@ -25,9 +26,12 @@ public class ReportGenerator implements IReportGenerator {
     }
 
     @Override
-    public void WriteEntitiesToFileSystem(Collection<IEntity> entities) {
+    public void WriteEntitiesToFileSystem(List<IEntity> entities) {
+        int entityCount = 0;
         for(IEntity entity : entities){
-            this.reportText += entity.ToString();
+            this.logger.Log(LoggingLevel.INFO,"printing entity "+entityCount+ " of "+entities.size() + "...");
+            this.reportText += entity.ToString() + "\n";
+            entityCount++;
         }
         try{
             this.printWriter = new PrintWriter(

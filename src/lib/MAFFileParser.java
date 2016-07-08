@@ -53,7 +53,7 @@ public class MAFFileParser extends FileParser {
                             Long.parseLong(matcher.group(this.END_POS)),
                                 Integer.parseInt(matcher.group(this.NCBI_BUILD)),
                                 matcher.group(this.REF),
-                                matcher.group(alt)));
+                                alt));
                 }
             }
         }

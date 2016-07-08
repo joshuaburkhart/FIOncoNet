@@ -5,3 +5,4 @@ data/instruct/sapiens.sin
 data/interactome/interactions.dat
 data/reactome/FIsInGene_031516_with_annotations.txt
 data/variants/IDC_lumA_dnaseq.maf
+build/

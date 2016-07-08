@@ -53,4 +53,13 @@ public class PairwiseInteraction extends Entity implements IPairwiseInteraction 
     public String GetPDB() {
         return null;
     }
+
+    @Override
+    public String ToString() {
+        String ret = this.gene1 + " " + this.direction + " " + this.gene2 + ":" + this.annotation;
+        for(IIsoform isoform : this.isoforms){
+            ret += "\n\t" + isoform.ToString();
+        }
+        return ret;
+    }
 }

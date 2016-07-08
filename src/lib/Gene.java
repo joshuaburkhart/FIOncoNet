@@ -52,4 +52,13 @@ public class Gene extends Entity implements IGene {
            this.parents.add(isoform);
        }
     }
+
+    @Override
+    public String ToString() {
+       String ret = this.geneSymbol;
+        for(IVariant variant : this.variants){
+            ret += "\n\t\t\t" + variant.ToString();
+        }
+        return ret;
+    }
 }

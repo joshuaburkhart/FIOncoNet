@@ -43,4 +43,9 @@ public class Isoform extends Entity implements IIsoform {
     public IGene GetGene() {
         return this.gene;
     }
+
+    @Override
+    public String ToString() {
+        return this.gene.GetGeneSymbol() + "\n\t\t" + this.gene.ToString();
+    }
 }

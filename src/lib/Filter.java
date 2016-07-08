@@ -1,48 +1,71 @@
 package lib;
 
-import java.util.Collection;
+import java.util.*;
 import java.util.function.Function;
 
 /**
  * Created by burkhart on 6/16/16.
  */
 public class Filter implements IFilter {
-    @Override
-    public Collection<IEntity> TopPercentile(Double percentile, Function<Double, INode> scoringFunction, Collection<IEntity> input) {
-        return null;
-    }
+    private ILogger logger;
 
-    @Override
-    public Collection<IEntity> BottomPercentile(Double percentile, Function<Double, INode> scoringFunction, Collection<IEntity> input) {
-        return null;
-    }
-
-    @Override
-    public Collection<IEntity> TopNumber(int number, Function<Double, INode> scoringFunction, Collection<IEntity> input) {
-        return null;
-    }
-
-    @Override
-    public Collection<IEntity> BottomNumber(int number, Function<Double, INode> scoringFunction, Collection<IEntity> input) {
-        return null;
-    }
-
-    @Override
-    public Collection<IEntity> Zero(Function<Double, INode> scoringFunction, Collection<IEntity> input) {
-        return null;
-    }
-
-    @Override
-    public Collection<IEntity> NonZero(Function<Double, INode> scoringFunction, Collection<IEntity> input) {
-        return null;
-    }
-
-    private static IFilter filter = null;
-
-    public static IFilter Instance(){
-        if(filter == null){
-            filter = new Filter();
+    private Comparator<IEntity> scoreComparator = new Comparator<IEntity>() {
+        public int compare(IEntity c1, IEntity c2) {
+            return (int) Math.ceil(c1.GetScore() - c2.GetScore());
         }
-        return filter;
+    };
+
+    public Filter(ILogger logger){
+        this.logger = logger;
+    }
+
+    @Override
+    public List<IEntity> TopPercentile(Double percentile, Collection<IEntity> input) {
+        List<IEntity> topPercentile = new ArrayList<>(input);
+        List<IEntity> removeEntities = new ArrayList<>();
+        int topCount = (int) Math.ceil(input.size() / percentile);
+        Collections.sort(topPercentile,scoreComparator);
+        for(int i = 0; i < topPercentile.size(); i++){
+            if(i >= topCount){
+                removeEntities.add(topPercentile.get(i));
+            }
+        }
+        topPercentile.removeAll(removeEntities);
+        return topPercentile;
+    }
+
+    @Override
+    public List<IEntity> BottomPercentile(Double percentile, Collection<IEntity> input) {
+        return null;
+    }
+
+    @Override
+    public List<IEntity> TopNumber(int number, Collection<IEntity> input) {
+        return null;
+    }
+
+    @Override
+    public List<IEntity> BottomNumber(int number, Collection<IEntity> input) {
+        return null;
+    }
+
+    @Override
+    public List<IEntity> Zero(Collection<IEntity> input) {
+        return null;
+    }
+
+    @Override
+    public List<IEntity> NonZero(Collection<IEntity> input) {
+        return null;
+    }
+
+    @Override
+    public List<IEntity> AboveThreshold(Double threshold, Collection<IEntity> input) {
+        return null;
+    }
+
+    @Override
+    public List<IEntity> BelowThreshold(Double threshold, Collection<IEntity> input) {
+        return null;
     }
 }

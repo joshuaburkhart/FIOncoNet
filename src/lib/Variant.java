@@ -39,4 +39,9 @@ public class Variant extends Entity implements IVariant{
             this.parents.add(gene);
         }
     }
+
+    @Override
+    public String ToString() {
+        return this.ref + " -> " + this.alt + " : " + this.startPos + "-" + this.endPos;
+    }
 }

@@ -26,19 +26,22 @@ public class EntityNetworkBuilder implements IEntityNetworkBuilder {
 
     private void RefreshEntityNetwork() {
         if (this.refreshRequired) {
-
+            this.logger.Log(LoggingLevel.INFO,"refresh required...");
             // read through variants, creating and connecting genes
+            this.logger.Log(LoggingLevel.INFO, "reading through "+this.variants.size()+" variants");
             Map<String,Collection<IVariant>> geneSymbolVariantMap = new HashMap<>();
             for(IEntity entity : this.variants){
                 IVariant variant = (IVariant) entity;
-               String geneSymbol = variant.GetGeneSymbol();
+                String geneSymbol = variant.GetGeneSymbol();
                 if(!geneSymbolVariantMap.containsKey(geneSymbol)){
                     geneSymbolVariantMap.put(geneSymbol,new HashSet<>());
                 }
                 geneSymbolVariantMap.get(geneSymbol).add(variant);
             }
+            this.logger.Log(LoggingLevel.INFO,geneSymbolVariantMap.keySet().size() + " variants mapped to genes");
             for(String geneSymbol : geneSymbolVariantMap.keySet()){
                 IGene gene = new Gene(geneSymbol,geneSymbolVariantMap.get(geneSymbol));
+                this.logger.Log(LoggingLevel.INFO,gene.GetVariants().size() + " variants in " + geneSymbol);
                 for(IVariant variant : gene.GetVariants()){
                     variant.SetGene(gene);
                 }
@@ -124,8 +127,10 @@ public class EntityNetworkBuilder implements IEntityNetworkBuilder {
             for(IEntity entity : removeVariants){
                 this.variants.remove(entity);
             }
-
+        }else{
+            this.logger.Log(LoggingLevel.INFO,"no refresh required...");
         }
+        this.refreshRequired = false;
     }
 
     @Override

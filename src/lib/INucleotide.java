@@ -5,5 +5,5 @@ package lib;
  */
 public interface INucleotide {
     long Coordinate = -1;
-    Base Base = N;
+    //Base Base = N;
 }
