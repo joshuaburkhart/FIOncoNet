@@ -21,25 +21,26 @@ public class Logger implements ILogger {
     public Logger(String logFilePath, LoggingLevel loggingLevel){
         this.logFilePath = logFilePath != null
                 ? logFilePath
-                : this.DEFAULT_LOG_FILE_PATH;
+                : DEFAULT_LOG_FILE_PATH;
         this.loggingLevel = loggingLevel;
         try{
             this.printWriter = new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath,true)));
         }catch(IOException ioe){
-           System.out.println(LoggingLevel.ERROR + this.LOG_FIELD_DELIMITER +
+           System.out.println(LoggingLevel.ERROR + LOG_FIELD_DELIMITER +
                    "could not open log file '" + this.logFilePath +"'." +
                    ioe.getMessage()+":"+ioe.getLocalizedMessage());
         }
         WriteNewExecutionHeader();
     }
 
-    public void SetLoggingLevel(LoggingLevel loggingLevel){
+    public LoggingLevel SetLoggingLevel(LoggingLevel loggingLevel){
         this.loggingLevel = loggingLevel;
+        return this.loggingLevel;
     }
 
     private void WriteNewExecutionHeader(){
-        AppendToLogFile(this.NEW_EXECUTION_BANNER);
-        AppendToLogFile(StringTimeStamp() + this.LOG_FIELD_DELIMITER + LongTimeStamp());
+        AppendToLogFile(NEW_EXECUTION_BANNER);
+        AppendToLogFile(StringTimeStamp() + LOG_FIELD_DELIMITER + LongTimeStamp());
     }
 
     @Override
@@ -56,25 +57,31 @@ public class Logger implements ILogger {
     }
 
     @Override
-    public void Log(LoggingLevel loggingLevel, String message) {
+    public String Log(LoggingLevel loggingLevel, String message) {
+        String logText = null;
         if(loggingLevel.ge(this.loggingLevel)) {
-            AppendToLogFile(StringTimeStamp() + this.LOG_FIELD_DELIMITER +
-                    LongTimeStamp() + this.LOG_FIELD_DELIMITER +
-                    loggingLevel + this.LOG_FIELD_DELIMITER +
-                    message);
+            logText = StringTimeStamp() + LOG_FIELD_DELIMITER +
+                    LongTimeStamp() + LOG_FIELD_DELIMITER +
+                    loggingLevel + LOG_FIELD_DELIMITER +
+                    message;
+            AppendToLogFile(logText);
         }
+        return logText;
     }
 
     @Override
-    public void Log(LoggingLevel loggingLevel, String message, Exception exception) {
+    public String Log(LoggingLevel loggingLevel, String message, Exception exception) {
+        String logText = null;
         if(loggingLevel.ge(this.loggingLevel)) {
-            AppendToLogFile(StringTimeStamp() + this.LOG_FIELD_DELIMITER +
+            logText = StringTimeStamp() + this.LOG_FIELD_DELIMITER +
                     LongTimeStamp() + this.LOG_FIELD_DELIMITER +
                     loggingLevel + this.LOG_FIELD_DELIMITER +
                     message + this.LOG_FIELD_DELIMITER +
                     exception.getMessage() + this.LOG_FIELD_DELIMITER +
-                    exception.getLocalizedMessage());
+                    exception.getLocalizedMessage();
+            AppendToLogFile(logText);
         }
+        return logText;
     }
 
     @Override
