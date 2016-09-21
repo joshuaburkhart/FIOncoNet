@@ -1,0 +1,4 @@
+open_receptor /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4d2i.pdb.gz
+open_ligand /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4q4w.pdb.gz
+activate_docking
+save_both /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex//4d2i_4q4w.pdb.gz

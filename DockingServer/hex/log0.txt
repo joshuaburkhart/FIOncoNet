@@ -1,0 +1,1502 @@
+Hex 8.0.0 starting at Wed Sep 21 14:51:08 2016 on host 128-223-223-144-wireless..
+
+Hostname:        128-223-223-144-wireless.
+Main memory:     4096 Mb
+CPUs online:     4
+GPUs online:     0
+Compute threads: 4
+
+Sizeof(short):   2
+Sizeof(int):     4
+Sizeof(long):    8
+Sizeof(long int):8
+Sizeof(float):   4
+Sizeof(double):  8
+Sizeof(octa):    8
+Sizeof(int *):   8
+Sizeof(long *):  8
+Sizeof(void *):  8
+
+Default path:    /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex
+PATH:            /Users/joshuaburkhart/hex/exe:/Users/joshuaburkhart/hex/bin:/Users/joshuaburkhart/anaconda/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/1.9.3-p0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/
+Hex program:     /Users/joshuaburkhart/hex/exe/hex8.0.0.x64
+HEX_ROOT:        /Users/joshuaburkhart/hex
+HEX_STRIDE:      stride.x64
+HEX_PDB:         NULL
+HEX_DATA:        NULL
+HEX_MACROS:      NULL
+HEX_COLOURS:     NULL
+HEX_STARTUP:     NULL
+HEX_FONTFILE:    NULL
+HEX_PIPE:        NULL
+HEX_CACHE:       /Users/joshuaburkhart/hex_cache
+HEX_LOG:         NULL
+HEX_CPUS:        NULL
+HEX_GPUS:        NULL
+HEX_FIRST_GPU:   NULL
+HEX_GTO_SCALE:   NULL
+HEX_ETO_SCALE:   NULL
+
+CUDA enabled:    No
+
+
+
+Running HEX_STARTUP file: /Users/joshuaburkhart/hex/data/startup_v5.mac
+Disc Cache enabled. Using directory: /Users/joshuaburkhart/hex_cache
+
+
+Reading commands from stdin ...
+>> open_receptor /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4d2i.pdb.gz
+Assuming /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4d2i.pdb.gz is a PDB file...
+
+Opened PDB file: /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4d2i.pdb.gz, ID = 4d2i.pdb
+PDB structure has crystal symmetry elements.
+PDB structure has biological symmetry elements.
+Loaded PDB file: /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4d2i.pdb.gz, (1070 residues, 9118 atoms, 1 models)
+*Warning* Fractional charge (-0.46) for terminal residue: A 476:GLY
+   GLY:N    Radius = 1.40, Charge = -0.52
+   GLY:CA   Radius = 1.70, Charge = 0.25
+   GLY:C    Radius = 1.40, Charge = 0.14
+   GLY:O    Radius = 1.50, Charge = -0.57
+   GLY:H    Radius = 0.00, Charge = 0.25
+*Warning* Fractional charge (-1.46) for terminal residue: B 477:GLU
+   GLU:N    Radius = 1.40, Charge = -0.52
+   GLU:CA   Radius = 1.50, Charge = 0.25
+   GLU:C    Radius = 1.40, Charge = 0.14
+   GLU:O    Radius = 1.50, Charge = -0.57
+   GLU:CB   Radius = 1.70, Charge = 0.00
+   GLU:CG   Radius = 1.70, Charge = -0.21
+   GLU:CD   Radius = 1.40, Charge = 0.62
+   GLU:OE1  Radius = 1.50, Charge = -0.71
+   GLU:OE2  Radius = 1.50, Charge = -0.71
+   GLU:H    Radius = 0.00, Charge = 0.25
+*Warning* Assigned R=1.80, Q=0.00 to unknown atom B 1477:ANP(PG)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O1G)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O2G)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O3G)
+*Warning* Assigned R=1.80, Q=0.00 to unknown atom B 1477:ANP(PB)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O1B)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O2B)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1477:ANP(N3B)
+*Warning* Assigned R=1.80, Q=0.00 to unknown atom B 1477:ANP(PA)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O1A)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O2A)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O3A)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O5')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C5')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C4')
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O4')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C3')
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O3')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C2')
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1477:ANP(O2')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C1')
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1477:ANP(N9)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C8)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1477:ANP(N7)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C5)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C6)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1477:ANP(N6)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1477:ANP(N1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C2)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1477:ANP(N3)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1477:ANP(C4)
+*Warning* Assigned R=1.80, Q=0.00 to unknown atom B 1478:MG(PG)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O1G)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O2G)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O3G)
+*Warning* Assigned R=1.80, Q=0.00 to unknown atom B 1478:MG(PB)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O1B)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O2B)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1478:MG(N3B)
+*Warning* Assigned R=1.80, Q=0.00 to unknown atom B 1478:MG(PA)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O1A)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O2A)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O3A)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O5')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C5')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C4')
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O4')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C3')
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O3')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C2')
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom B 1478:MG(O2')
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C1')
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1478:MG(N9)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C8)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1478:MG(N7)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C5)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C6)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1478:MG(N6)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1478:MG(N1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C2)
+*Warning* Assigned R=1.55, Q=0.00 to unknown atom B 1478:MG(N3)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom B 1478:MG(C4)
+Counted 116 +ve and 123 -ve formal charged residues: Net formal charge: -7
+*Warning* Using PDB CONECT records to define non-standard bonds.
+*Warning* Ignoring alternate atom locations found in PDB file.
+>4d2i.pdb A
+MIIGYVIGQATTQEALILAERPVRLGTYVVLEYDNVKALGLITNVTRGSPLLDDNMNDIEIVQRLKQFNNSIPVYTKAKVKLLCDMNNHFLMPDIPPFAGTPAREAEDEELKSIYSQDGQIRIGSLIGKNVEVKLNINSFARHLAILAATGSGKSNTVAVLSQRISELGGSVLIFDYHGEYYDSDIKNLNRIEPKLNPLYMTPREFSTLLEIRENAIIQYRILRRAFIKVTNGIRAALAAGQIPFSTLNSQFYELMADALKDEVLNKFEEFMDRYSNVIDLTSSDIIEKVKRGKVNVVSLTQLDEDSMDAVVSHYLRRILDSRKDFKRSKNSGLKFPIIAVIEEAHVFLSKNENTLTKYWASRIAREGRKFGVGLTIVSQRPKGLDENILSQMTNKIILKIIEPTDKKYILESSDNLSEDLAEQLSSLDVGEAIIIGKIVKLPAVVKIDMFEGKLLGSDPDMIG
+>4d2i.pdb B
+MIIGYVIGQATTQEALILAERPVRLGTYVVLEYDNVKALGLITNVTRGSPLLDDNMNDIEIVQRLKQFNNSIPVYTKAKVKLLCDMNNHFLMPDIPPFAGTPAREAEDEELKSIYSQDGQIRIGSLIGKNVEVKLNINSFARHLAILAATGSGKSNTVAVLSQRISELGGSVLIFDYHGEYYDSDIKNLNRIEPKLNPLYMTPREFSTLLEIRENAIIQYRILRRAFIKVTNGIRAALLNSQFYELMADALSAKDEVLNKFEEFMDRYSNVIDLTSSDIIEKVKRGKVNVVSLTQLDEDSMDAVVSHYLRRILDSRKDFKRSKNSGLKFPIIAVIEEAHVFLSKNENTLTKYWASRIAREGRKFGVGLTIVSQRPKGLDENILSQMTNKIILKIIEPTDKKYILESSDNLSEDLAEQLSSLDVGEAIIIGKIVKLPAVVKIDMFEGKLLGSDPDMIGE
+>> open_ligand /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4q4w.pdb.gz
+Assuming /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4q4w.pdb.gz is a PDB file...
+
+Opened PDB file: /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4q4w.pdb.gz, ID = 4q4w.pdb
+*Warning* Can't add all hydrogens to incomplete residue: 2 172:LYS
+*Warning* Can't add all hydrogens to incomplete residue: 3 139:LYS
+*Warning* Can't add all hydrogens to incomplete residue: 3 233:ARG
+*Warning* Can't add all hydrogens to incomplete residue: 4 43:LYS
+*Warning* Can't add all hydrogens to incomplete residue: 4 69:ASN
+PDB structure has crystal symmetry elements.
+PDB structure has biological symmetry elements.
+Loaded PDB file: /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex/4q4w.pdb.gz, (1686 residues, 8898 atoms, 1 models)
+*Warning* Fractional charge (0.34) for non-terminal residue: 2 172:LYS
+   LYS:N    Radius = 1.40, Charge = -0.52
+   LYS:CA   Radius = 1.50, Charge = 0.23
+   LYS:C    Radius = 1.40, Charge = 0.53
+   LYS:O    Radius = 1.50, Charge = -0.50
+   LYS:CB   Radius = 1.70, Charge = 0.04
+   LYS:CG   Radius = 1.70, Charge = 0.05
+   LYS:CD   Radius = 1.70, Charge = 0.05
+   LYS:CE   Radius = 1.70, Charge = 0.22
+   LYS:H    Radius = 0.00, Charge = 0.25
+*Warning* Fractional charge (-0.46) for terminal residue: 2 271:GLN
+   GLN:N    Radius = 1.40, Charge = -0.52
+   GLN:CA   Radius = 1.50, Charge = 0.21
+   GLN:C    Radius = 1.40, Charge = 0.14
+   GLN:O    Radius = 1.50, Charge = -0.57
+   GLN:CB   Radius = 1.70, Charge = 0.05
+   GLN:CG   Radius = 1.70, Charge = -0.04
+   GLN:CD   Radius = 1.40, Charge = 0.68
+   GLN:OE1  Radius = 1.50, Charge = -0.47
+   GLN:NE2  Radius = 1.40, Charge = -0.87
+   GLN:H    Radius = 0.00, Charge = 0.25
+   GLN:1HE2 Radius = 0.00, Charge = 0.34
+   GLN:2HE2 Radius = 0.00, Charge = 0.34
+*Warning* Fractional charge (0.34) for non-terminal residue: 3 139:LYS
+   LYS:N    Radius = 1.40, Charge = -0.52
+   LYS:CA   Radius = 1.50, Charge = 0.23
+   LYS:C    Radius = 1.40, Charge = 0.53
+   LYS:O    Radius = 1.50, Charge = -0.50
+   LYS:CB   Radius = 1.70, Charge = 0.04
+   LYS:CG   Radius = 1.70, Charge = 0.05
+   LYS:CD   Radius = 1.70, Charge = 0.05
+   LYS:CE   Radius = 1.70, Charge = 0.22
+   LYS:H    Radius = 0.00, Charge = 0.25
+*Warning* Fractional charge (-0.46) for terminal residue: 3 234:THR
+   THR:N    Radius = 1.40, Charge = -0.52
+   THR:CA   Radius = 1.50, Charge = 0.27
+   THR:C    Radius = 1.40, Charge = 0.14
+   THR:O    Radius = 1.50, Charge = -0.57
+   THR:CB   Radius = 1.50, Charge = 0.21
+   THR:OG1  Radius = 1.70, Charge = -0.55
+   THR:CG2  Radius = 1.90, Charge = 0.01
+   THR:H    Radius = 0.00, Charge = 0.25
+   THR:HG1  Radius = 0.00, Charge = 0.31
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom 4 901:HEZ(O1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 901:HEZ(C1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 901:HEZ(C2)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 901:HEZ(C3)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 901:HEZ(C4)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 901:HEZ(C5)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 901:HEZ(C6)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom 4 901:HEZ(O6)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom 4 902:HEZ(O1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 902:HEZ(C1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 902:HEZ(C2)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 902:HEZ(C3)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 902:HEZ(C4)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 902:HEZ(C5)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 902:HEZ(C6)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom 4 902:HEZ(O6)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom 4 401:HEZ(O1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 401:HEZ(C1)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 401:HEZ(C2)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 401:HEZ(C3)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 401:HEZ(C4)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 401:HEZ(C5)
+*Warning* Assigned R=1.70, Q=0.00 to unknown atom 4 401:HEZ(C6)
+*Warning* Assigned R=1.52, Q=0.00 to unknown atom 4 401:HEZ(O6)
+Counted 68 +ve and 75 -ve formal charged residues: Net formal charge: -7
+*Warning* Using PDB CONECT records to define non-standard bonds.
+*Warning* Ignoring alternate atom locations found in PDB file.
+>4q4w.pdb 1
+PTAQSTPLTSGVNSQEVPALTAVETGASGQAVPSDVIETRHVVNYKTRSESTLESFFGRSACVTILEVENFNATTDADRKKQFTTWAITYTDTVQLRRKLEFFTYSRFDLEMTFVITERYYASNTGHARNQVYQLMYIPPGAPRPTAWDDYTWQSSSNPSVFYTYGSAPPRMSIPYVGIANAYSHFYDGFARVPLKDETVDSGDTYYGLVTINDFGTLAVRVVNEYNPARITSKIRVYMKPKHVRCWCPRPPRAVPYRGEGVDFKQDSITPLTAVENINTF
+>4q4w.pdb 2
+GYSDRVRQITLGNSTITTQEAANAVVAYGEWPSYLDDKEANPIDAPTEPDVSSNRFYTLDSVQWKSTSRGWWWKLPDALKDMGMFGQNMYYHYLGRSGYTVHVQCNASKFHQGALGVFAIPEYVMACNTEAKTSYVSYVNANPGEKGGVFDNAYNPSAEASEGRKFAALDYLLGCGVLAGNAFVYPHQIINLRTNNSATLVLPYVNSLAIDCMAKHNNWGLVILPLCKLDYAPNSSTEIPITVTIAPMFTEFNGLRNITVPATQ
+>4q4w.pdb 3
+GLPTMLTPGSSQFLTSDDFQSPCALPNFDVTPPIHIPGEVFNMMELAEIDSMIPMNSVTGKANTMEMYPIPLDDKGSATPIFSISLSPASDKRLQYTMLGEILNYYTHWTGSLRFTFLFCGSMMATGKILLSYSPPGAKPPTTRKDAMLGTHIIWDLGLQSSCTMLAPWISNTVYRRCIKDDFTEGGYITCFYQTRIVVPSGTPTSMFMLAFVSACPDFSVRLLRDTNHISQRT
+>4q4w.pdb 4
+GAQVSSQKVGAHVNYTTINYYKDSASNAASKLDFSQDPSKFTEPVKDIMIKTAPALN
+>> activate_docking
+
+Contouring surface for molecule 4d2i.pdb.
+Polar probe = 1.40A, Apolar probe = 1.40A
+Gaussian sampling over 7338 atoms done in 1.78 seconds.
+Contoured 602852 triangles (301428 vertices) in 1.21 seconds.
+Surface traversal done in 0.26 seconds - Found 3 surface segments.
+Primary surface:   Area = 30110.54, Volume = 189352.23.
+Secondary surface: Area = 26.54, Volume = 7.73.
+Culled 0 small segments in 0.23 seconds.
+Total contouring time: 1.70 seconds.
+
+
+Contouring surface for molecule 4q4w.pdb.
+Polar probe = 1.40A, Apolar probe = 1.40A
+Gaussian sampling over 6553 atoms done in 1.59 seconds.
+Contoured 545828 triangles (272914 vertices) in 0.90 seconds.
+Surface traversal done in 0.26 seconds - Found 3 surface segments.
+Primary surface:   Area = 27246.68, Volume = 167760.54.
+Secondary surface: Area = 11.70, Volume = 3.00.
+Culled 1 small segments in 0.24 seconds.
+Total contouring time: 1.41 seconds.
+
+Sampling surface and interior volumes for molecule 4d2i.pdb.
+Generated 256395 exterior and 255966 interior skin grid cells.
+Exterior skin volume = 55381.32; interior skin volume = 55288.66.
+Volume sampling done in 1.81 seconds.
+Sampling surface and interior volumes for molecule 4q4w.pdb.
+Generated 232426 exterior and 223066 interior skin grid cells.
+Exterior skin volume = 50204.02; interior skin volume = 48182.26.
+Volume sampling done in 1.36 seconds.
+
+Calculating potential to N = 25 (5525 coefficients) using 4 Tasks ...
+Grid: 244x244x244 = 14526784 cells (837315 non-zero) of 0.60 Angstroms.
+Done integration over 837315 cells in 15.72s (53279/s).
+
+
+------------------------------------------------------------------------------
+Docking will output a maximum of 2000 solutions per pair...
+
+------------------------------------------------------------------------------
+Docking 1 pair of starting orientations...
+
+Docking receptor: 4d2i.pdb and ligand: 4q4w.pdb...
+
+Receptor 4d2i.pdb: Tag = 4d2i.pdb
+Ligand   4q4w.pdb: Tag = 4q4w.pdb
+
+Setting up shape-only correlation.
+
+Starting SPF search.
+Setting docking_score threshold = 0.0
+Setting 51 distance samples from 40.00 to 80.00, with steps of 0.80.
+
+
+Total 6D space: Iterate[51,812,1] x FFT[64,24,48] = 3053223936.
+Initial rotational increments (N=18) Receptor: 812 (27Mb), Ligand: 812 (27Mb)
+Applying 812+812 coefficient rotations on 4 CPUs for N=18.
+Done 1624 rotations in a total of 0.19s (8519/s).
+
+Starting 3D FFT search using 4 CPUs and 0 GPUs with N=18, Nalpha=64/64.
+Calculating Wigner coefficients to N=18 ...
+Done 10830 coupling coefficients to N=18 in 0.29 seconds.
+*Error* Failed to create file: hex_wigner.asc.
+ [Permission denied]
+Translation matrix K[18](60.00) done in 0.86 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 0.58 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60p80.dat.
+** [Permission denied]
+Estart = 200.23.
+Translation matrix K[18](40.00) done in 0.98 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_40.dat.
+** [Permission denied]
+Translation matrix K[18](41.00) done in 0.99 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_41.dat.
+** [Permission denied]
+Translation matrix K[18](42.00) done in 1.00 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_42.dat.
+** [Permission denied]
+Translation matrix K[18](40.00) done in 1.01 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_40.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 0.99 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 0.98 seconds.
+Translation matrix K[18](0.60) done in 1.00 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_40p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_42p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_41p60.dat.
+** [Permission denied]
+Translation matrix K[18](43.00) done in 0.95 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_43.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 0.99 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+Translation matrix K[18](44.00) done in 0.98 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_44.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_43p20.dat.
+** [Permission denied]
+Translation matrix K[18](44.00) done in 0.99 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_44.dat.
+** [Permission denied]
+Translation matrix K[18](45.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_45.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.09 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.11 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_44p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_45p60.dat.
+** [Permission denied]
+Translation matrix K[18](46.00) done in 1.02 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_46.dat.
+** [Permission denied]
+Translation matrix K[18](47.00) done in 1.01 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_47.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_46p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_47p20.dat.
+** [Permission denied]
+Translation matrix K[18](48.00) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_48.dat.
+** [Permission denied]
+Translation matrix K[18](48.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_48.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.09 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_48p80.dat.
+** [Permission denied]
+Translation matrix K[18](49.00) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_49.dat.
+** [Permission denied]
+Translation matrix K[18](50.00) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_50.dat.
+** [Permission denied]
+Translation matrix K[18](51.00) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_51.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_49p60.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_50p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_51p20.dat.
+** [Permission denied]
+Translation matrix K[18](52.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_52.dat.
+** [Permission denied]
+Translation matrix K[18](52.00) done in 1.04 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_52.dat.
+** [Permission denied]
+Translation matrix K[18](53.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_53.dat.
+** [Permission denied]
+Translation matrix K[18](54.00) done in 1.04 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_54.dat.
+** [Permission denied]
+Translation matrix K[18](55.00) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_55.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.12 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_52p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.11 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_53p60.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_54p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_55p20.dat.
+** [Permission denied]
+Translation matrix K[18](56.00) done in 1.04 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_56.dat.
+** [Permission denied]
+Translation matrix K[18](56.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_56.dat.
+** [Permission denied]
+Translation matrix K[18](57.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_57.dat.
+** [Permission denied]
+Translation matrix K[18](58.00) done in 1.04 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_58.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_56p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.09 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_57p60.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_58p40.dat.
+** [Permission denied]
+Translation matrix K[18](59.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_59.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.11 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_59p20.dat.
+** [Permission denied]
+Translation matrix K[18](60.00) done in 0.98 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60.dat.
+** [Permission denied]
+Translation matrix K[18](60.00) done in 0.96 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60.dat.
+** [Permission denied]
+Translation matrix K[18](61.00) done in 0.99 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_61.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_61p60.dat.
+** [Permission denied]
+Translation matrix K[18](62.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_62.dat.
+** [Permission denied]
+Translation matrix K[18](63.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_63.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_62p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_63p20.dat.
+** [Permission denied]
+Translation matrix K[18](64.00) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_64.dat.
+** [Permission denied]
+Translation matrix K[18](64.00) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_64.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_64p80.dat.
+** [Permission denied]
+Translation matrix K[18](65.00) done in 1.04 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_65.dat.
+** [Permission denied]
+Translation matrix K[18](66.00) done in 1.03 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_66.dat.
+** [Permission denied]
+Translation matrix K[18](67.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_67.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_65p60.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_66p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_67p20.dat.
+** [Permission denied]
+Translation matrix K[18](68.00) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_68.dat.
+** [Permission denied]
+Translation matrix K[18](68.00) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_68.dat.
+** [Permission denied]
+Translation matrix K[18](69.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_69.dat.
+** [Permission denied]
+Translation matrix K[18](70.00) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_70.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.09 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+Translation matrix K[18](71.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_71.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_68p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_69p60.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.06 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_70p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_71p20.dat.
+** [Permission denied]
+Translation matrix K[18](72.00) done in 1.01 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_72.dat.
+** [Permission denied]
+Translation matrix K[18](72.00) done in 1.04 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_72.dat.
+** [Permission denied]
+Translation matrix K[18](73.00) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_73.dat.
+** [Permission denied]
+Translation matrix K[18](74.00) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_74.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.09 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_72p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.12 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_73p60.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.11 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_74p40.dat.
+** [Permission denied]
+Translation matrix K[18](75.00) done in 1.02 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_75.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_75p20.dat.
+** [Permission denied]
+Translation matrix K[18](76.00) done in 1.00 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_76.dat.
+** [Permission denied]
+Translation matrix K[18](76.00) done in 1.02 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_76.dat.
+** [Permission denied]
+Translation matrix K[18](77.00) done in 1.05 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_77.dat.
+** [Permission denied]
+Translation matrix K[18](0.80) done in 1.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_76p80.dat.
+** [Permission denied]
+Translation matrix K[18](0.60) done in 1.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_77p60.dat.
+** [Permission denied]
+Translation matrix K[18](78.00) done in 1.01 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_78.dat.
+** [Permission denied]
+Translation matrix K[18](79.00) done in 1.01 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_79.dat.
+** [Permission denied]
+Translation matrix K[18](0.40) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_78p40.dat.
+** [Permission denied]
+Translation matrix K[18](0.20) done in 1.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_79p20.dat.
+** [Permission denied]
+Translation matrix K[18](80.00) done in 0.97 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_80.dat.
+** [Permission denied]
+Done 3053223936 orientations in 172.07s (17744540/s).
+Found 676096/3053223936 within score threshold = 0.0 NOT including start guess.
+
+Solution buffer reached 676096/1600000 = 42.3% occupancy with no culling.
+Starting guess not found in top 676096 solutions.
+Emin = nan, Emax = -0.00
+
+Re-sampling top 25000 orientations -> top 17049 retained.
+Surviving rotational steps (N=25) Receptor: 1 (1Mb), Ligand: 752 (64Mb)
+Applying 1+752 coefficient rotations on 4 CPUs for N=25.
+Done 753 rotations in a total of 0.34s (2219/s).
+
+Starting 1D FFT refinement using 4 CPUs and 0 GPUs with N=25, Nalpha=64/64.
+Calculating Wigner coefficients to N=25 ...
+Done 38025 coupling coefficients to N=25 in 1.56 seconds.
+*Error* Failed to create file: hex_wigner.asc.
+ [Permission denied]
+Translation matrix K[25](60.00) done in 5.18 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60.dat.
+** [Permission denied]
+Translation matrix K[25](0.80) done in 3.53 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_60p80.dat.
+** [Permission denied]
+Estart = 710.23.
+Translation matrix K[25](64.00) done in 6.31 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_64.dat.
+** [Permission denied]
+Translation matrix K[25](62.00) done in 6.33 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_62.dat.
+** [Permission denied]
+Translation matrix K[25](64.00) done in 6.34 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_64.dat.
+** [Permission denied]
+Translation matrix K[25](63.00) done in 6.35 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_63.dat.
+** [Permission denied]
+Translation matrix K[25](65.00) done in 6.66 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_65.dat.
+** [Permission denied]
+Translation matrix K[25](0.40) done in 6.79 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[25](0.20) done in 6.80 seconds.
+Translation matrix K[25](0.80) done in 6.84 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_62p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_63p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_64p80.dat.
+** [Permission denied]
+Translation matrix K[25](0.60) done in 4.16 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_65p60.dat.
+** [Permission denied]
+Translation matrix K[25](66.00) done in 6.89 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_66.dat.
+** [Permission denied]
+Translation matrix K[25](67.00) done in 6.88 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_67.dat.
+** [Permission denied]
+Translation matrix K[25](68.00) done in 6.91 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_68.dat.
+** [Permission denied]
+Translation matrix K[25](68.00) done in 6.92 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_68.dat.
+** [Permission denied]
+Translation matrix K[25](69.00) done in 6.97 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_69.dat.
+** [Permission denied]
+Translation matrix K[25](0.40) done in 7.20 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[25](0.20) done in 7.20 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+Translation matrix K[25](0.80) done in 6.70 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_66p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_67p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_68p80.dat.
+** [Permission denied]
+Translation matrix K[25](0.60) done in 4.97 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_69p60.dat.
+** [Permission denied]
+Translation matrix K[25](71.00) done in 6.92 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_71.dat.
+** [Permission denied]
+Translation matrix K[25](70.00) done in 7.00 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_70.dat.
+** [Permission denied]
+Translation matrix K[25](72.00) done in 7.02 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_72.dat.
+** [Permission denied]
+Translation matrix K[25](72.00) done in 6.91 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_72.dat.
+** [Permission denied]
+Translation matrix K[25](73.00) done in 6.85 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_73.dat.
+** [Permission denied]
+Translation matrix K[25](0.20) done in 7.08 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+Translation matrix K[25](0.40) done in 7.07 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[25](0.80) done in 6.65 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_71p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_70p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_72p80.dat.
+** [Permission denied]
+Translation matrix K[25](0.60) done in 5.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_73p60.dat.
+** [Permission denied]
+Translation matrix K[25](76.00) done in 6.78 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_76.dat.
+** [Permission denied]
+Translation matrix K[25](74.00) done in 6.84 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_74.dat.
+** [Permission denied]
+Translation matrix K[25](75.00) done in 6.81 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_75.dat.
+** [Permission denied]
+Translation matrix K[25](76.00) done in 6.84 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_76.dat.
+** [Permission denied]
+Translation matrix K[25](77.00) done in 6.89 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_77.dat.
+** [Permission denied]
+Translation matrix K[25](0.20) done in 7.10 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+Translation matrix K[25](0.40) done in 7.13 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[25](0.80) done in 6.51 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_75p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p80.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_74p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_76p80.dat.
+** [Permission denied]
+Translation matrix K[25](0.60) done in 4.99 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p60.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_77p60.dat.
+** [Permission denied]
+Translation matrix K[25](78.00) done in 5.95 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_78.dat.
+** [Permission denied]
+Translation matrix K[25](80.00) done in 5.95 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_80.dat.
+** [Permission denied]
+Translation matrix K[25](79.00) done in 5.97 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_79.dat.
+** [Permission denied]
+Translation matrix K[25](0.40) done in 3.77 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p40.dat.
+** [Permission denied]
+Translation matrix K[25](0.20) done in 3.76 seconds.
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_p20.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_78p40.dat.
+** [Permission denied]
+*Error* Failed to open /Users/joshuaburkhart/hex_cache/hex_dh_79p20.dat.
+** [Permission denied]
+Done 1091136 orientations in 82.88s (13165/s).
+Found 17049/1091136 within score threshold = 0.0 NOT including start guess.
+
+
+Solution buffer reached 17049/200000 = 8.5% occupancy with no culling.
+Starting guess not found in top 17049 solutions.
+Emin = nan, Emax = nan
+
+Docking correlation summary by RMS deviation and steric clashes
+-------------------------------------------------------------------------
+  Soln   Etotal    Eshape    Eforce    Eair              RMS        Bumps
+  ----  --------- --------- --------- ---------   ----------------  -----
+
+
+Docked structures 4d2i.pdb:4q4w.pdb in a total of 4 min, 27 sec.
+
+
+------------------------------------------------------------------------------
+Saving top 2000 orientations.
+
+Docking done in a total of 4 min, 27 sec.
+
+
+------------------------------------------------------------------------------
+
+No AIRs enabled or defined. Skipping restraint checks.
+Clustering found 1636 clusters from 2000 docking solutions in 2.13 seconds.
+
+---- ---- ------- ------- ------- ------- ------- --- -----
+Clst Soln  Models  Etotal  Eshape  Eforce  Eair   Bmp  RMS
+---- ---- ------- ------- ------- ------- ------- --- -----
+   1    1 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   2    2 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   3    3 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   4    4 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   5    5 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   6    6 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   7    7 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   8    8 000:000     nan     nan     0.0     0.0  -1  -1.00   
+   9    9 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  10   10 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  11   11 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  12   12 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  13   13 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  14   14 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  15   15 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  16   16 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  16   22 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  17   17 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  18   18 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  19   19 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  20   20 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  21   21 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  22   23 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  23   24 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  24   25 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  25   26 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  26   27 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  27   28 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  28   29 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  29   30 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  30   31 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  31   32 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  32   33 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  32   36 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  33   34 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  34   35 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  35   37 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  36   38 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  37   39 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  38   40 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  38   45 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  39   41 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  39   46 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  40   42 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  41   43 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  42   44 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  43   47 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  43   53 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  44   48 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  45   49 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  46   50 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  47   51 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  48   52 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  49   54 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  50   55 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  51   56 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  52   57 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  53   58 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  54   59 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  55   60 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  56   61 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  57   62 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  58   63 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  59   64 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  60   65 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  61   66 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  62   67 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  63   68 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  64   69 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  65   70 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  66   71 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  67   72 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  68   73 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  69   74 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  70   75 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  71   76 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  72   77 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  73   78 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  74   79 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  75   80 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  76   81 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  77   82 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  78   83 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  79   84 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  80   85 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  81   86 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  82   87 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  83   88 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  84   89 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  85   90 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  86   91 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  86   95 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  87   92 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  87   96 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  88   93 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  89   94 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  90   97 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  91   98 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  92   99 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  92  105 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  93  100 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  93  106 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  94  101 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  94  107 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  95  102 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  96  103 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  97  104 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  97  111 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  98  108 000:000     nan     nan     0.0     0.0  -1  -1.00   
+  99  109 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 100  110 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 101  112 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 102  113 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 103  114 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 104  115 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 105  116 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 106  117 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 107  118 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 108  119 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 108  123 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 109  120 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 109  124 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 110  121 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 111  122 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 112  125 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 113  126 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 114  127 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 114  133 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 115  128 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 115  134 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 116  129 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 116  135 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 117  130 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 118  131 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 119  132 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 119  139 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 120  136 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 121  137 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 122  138 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 123  140 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 124  141 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 125  142 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 126  143 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 127  144 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 128  145 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 129  146 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 130  147 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 131  148 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 132  149 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 133  150 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 134  151 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 135  152 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 136  153 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 137  154 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 138  155 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 139  156 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 140  157 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 141  158 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 142  159 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 143  160 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 144  161 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 145  162 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 146  163 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 147  164 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 148  165 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 149  166 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 150  167 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 151  168 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 152  169 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 153  170 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 154  171 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 155  172 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 156  173 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 157  174 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 158  175 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 159  176 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 160  177 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 161  178 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 162  179 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 163  180 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 163  185 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 164  181 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 165  182 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 166  183 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 167  184 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 168  186 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 169  187 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 170  188 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 171  189 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 172  190 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 173  191 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 174  192 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 175  193 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 176  194 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 177  195 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 178  196 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 179  197 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 180  198 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 181  199 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 182  200 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 183  201 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 184  202 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 185  203 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 186  204 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 187  205 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 188  206 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 189  207 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 189  212 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 190  208 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 191  209 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 192  210 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 193  211 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 194  213 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 195  214 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 196  215 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 197  216 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 198  217 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 199  218 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 199  225 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 200  219 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 201  220 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 202  221 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 203  222 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 204  223 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 205  224 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 206  226 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 207  227 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 208  228 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 209  229 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 209  232 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 210  230 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 211  231 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 212  233 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 213  234 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 214  235 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 215  236 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 215  241 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 216  237 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 216  242 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 217  238 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 218  239 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 219  240 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 220  243 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 220  249 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 221  244 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 222  245 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 223  246 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 224  247 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 225  248 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 226  250 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 227  251 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 228  252 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 229  253 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 230  254 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 231  255 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 232  256 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 233  257 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 234  258 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 235  259 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 236  260 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 237  261 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 238  262 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 239  263 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 240  264 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 241  265 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 242  266 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 243  267 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 244  268 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 245  269 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 246  270 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 247  271 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 248  272 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 248  273 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 249  274 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 250  275 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 250  276 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 251  277 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 252  278 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 252  279 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 252  280 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 253  281 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 253  285 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 254  282 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 254  286 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 255  283 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 255  287 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 256  284 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 256  288 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 256  289 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 257  290 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 257  296 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 258  291 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 258  297 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 259  292 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 259  298 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 260  293 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 260  299 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 261  294 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 261  300 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 262  295 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 262  301 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 263  302 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 264  303 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 265  304 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 266  305 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 267  306 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 268  307 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 269  308 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 270  309 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 271  310 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 272  311 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 273  312 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 274  313 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 275  314 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 276  315 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 277  316 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 278  317 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 279  318 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 280  319 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 281  320 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 282  321 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 283  322 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 284  323 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 285  324 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 286  325 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 287  326 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 288  327 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 288  329 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 289  328 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 290  330 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 290  331 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 291  332 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 292  333 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 292  334 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 293  335 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 294  336 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 294  337 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 295  338 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 295  339 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 296  340 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 296  341 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 297  342 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 297  343 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 298  344 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 299  345 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 299  346 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 300  347 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 300  348 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 301  349 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 301  350 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 302  351 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 302  352 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 303  353 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 303  355 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 304  354 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 305  356 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 306  357 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 307  358 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 307  363 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 308  359 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 308  364 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 309  360 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 310  361 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 311  362 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 312  365 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 313  366 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 314  367 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 315  368 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 316  369 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 317  370 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 318  371 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 319  372 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 320  373 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 321  374 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 322  375 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 323  376 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 324  377 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 325  378 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 326  379 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 327  380 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 328  381 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 329  382 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 330  383 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 331  384 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 332  385 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 333  386 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 334  387 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 335  388 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 336  389 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 337  390 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 338  391 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 339  392 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 340  393 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 341  394 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 342  395 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 343  396 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 344  397 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 345  398 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 346  399 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 346  401 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 347  400 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 348  402 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 349  403 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 350  404 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 351  405 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 352  406 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 353  407 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 354  408 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 355  409 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 356  410 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 356  416 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 357  411 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 358  412 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 359  413 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 360  414 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 361  415 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 362  417 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 363  418 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 364  419 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 365  420 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 366  421 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 367  422 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 368  423 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 369  424 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 369  426 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 370  425 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 370  428 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 371  427 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 371  431 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 372  429 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 372  432 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 373  430 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 373  434 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 374  433 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 374  437 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 375  435 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 375  439 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 376  436 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 376  442 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 377  438 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 377  445 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 378  440 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 378  447 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 379  441 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 380  443 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 380  444 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 381  446 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 382  448 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 382  450 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 383  449 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 384  451 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 384  455 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 384  456 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 385  452 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 385  457 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 386  453 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 386  458 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 387  454 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 387  459 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 388  460 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 388  467 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 389  461 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 389  468 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 390  462 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 390  469 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 391  463 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 391  470 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 392  464 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 392  471 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 393  465 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 393  472 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 394  466 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 395  473 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 396  474 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 397  475 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 398  476 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 399  477 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 400  478 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 401  479 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 402  480 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 403  481 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 404  482 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 405  483 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 406  484 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 407  485 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 407  486 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 408  487 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 408  488 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 409  489 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 409  490 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 410  491 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 410  492 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 411  493 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 412  494 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 412  495 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 413  496 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 414  497 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 415  498 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 416  499 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 416  621 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 417  500 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 417  688 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 418  501 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 418  596 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 419  502 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 420  503 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 421  504 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 422  505 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 423  506 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 424  507 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 425  508 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 426  509 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 427  510 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 428  511 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 428  512 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 429  513 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 429  514 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 430  515 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 430  516 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 431  517 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 432  518 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 432  519 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 433  520 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 433  521 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 434  522 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 434  523 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 435  524 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 436  525 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 436  526 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 437  527 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 437  528 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 438  529 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 438  530 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 439  531 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 440  532 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 440  533 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 441  534 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 441  535 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 442  536 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 442  537 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 443  538 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 444  539 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 444  540 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 445  541 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 445  542 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 446  543 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 446  544 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 447  545 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 448  546 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 448  547 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 449  548 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 449  549 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 450  550 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 450  551 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 451  552 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 452  553 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 453  554 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 454  555 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 455  556 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 456  557 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 457  558 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 458  559 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 459  560 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 459  561 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 460  562 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 460  563 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 461  564 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 461  565 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 462  566 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 463  567 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 463  568 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 464  569 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 464  570 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 465  571 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 465  572 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 466  573 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 467  574 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 468  575 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 469  576 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 470  577 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 471  578 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 472  579 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 473  580 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 474  581 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 474  753 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 475  582 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 476  583 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 477  584 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 478  585 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 479  586 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 480  587 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 481  588 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 482  589 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 482  634 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 483  590 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 483  591 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 484  592 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 485  593 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 485  594 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 486  595 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 487  597 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 488  598 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 488  599 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 489  600 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 489  601 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 490  602 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 490  603 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 491  604 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 492  605 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 492  628 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 492  803 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 493  606 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 493  804 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 494  607 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 494  805 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 495  608 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 496  609 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 497  610 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 498  611 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 499  612 000:000     nan     nan     0.0     0.0  -1  -1.00   
+ 500  613 000:000     nan     nan     0.0     0.0  -1  -1.00   
+------------------------------------------------------------
+   1    1 000:000     nan     nan     0.0     0.0  -1  -1.00   
+>> save_both /Users/joshuaburkhart/SoftwareProjects/FIOncoNet/DockingServer/hex//4d2i_4q4w.pdb.gz
+
+Max application memory used: 197.87 MB virtual + 0.00 KB shared.
+
+Hex stopping: Wed Sep 21 14:56:03 2016

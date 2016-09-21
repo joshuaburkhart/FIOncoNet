@@ -1,0 +1,27 @@
+
+<jnlp spec="1.0+" codebase="http://www.rcsb.org:80">
+    <information>
+        <title>RCSB File Downloader</title>
+        <vendor>RCSB PDB</vendor>
+        <homepage href="http://www.rcsb.org:80"/>
+        <description>Download files via Java Web Start</description>
+        <offline-allowed/>
+        <description kind="short">Download files via Java Web Start</description>
+        <icon kind="splash" href="/pdb/img/pdbws_splash.gif"/>
+        <shortcut online="false">
+            <desktop/>
+            <menu submenu="RCSB File Downloader"/>
+        </shortcut>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.8 1.7 1.6" initial-heap-size="64m" max-heap-size="512m"/>
+        <jar href="pdb/download/web_download/RCSB-Download-Applet.jar" main="true"/>
+    </resources>
+    <application-desc main-class="org.rcsb.Downloader">
+        <argument>/pdb/files/4D2I.pdb.gz,/pdb/files/4Q4W.pdb.gz</argument>
+        <argument>http://www.rcsb.org:80</argument>
+    </application-desc>
+</jnlp>
