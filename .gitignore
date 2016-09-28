@@ -25,7 +25,6 @@ log/*.log.txt
 DockingServer/hex/hex-tmp-8.0.0/*
 
 # Docking Server Input
-DockingServer/input/__MACOSX/*
 DockingServer/input/**/*.pdb
 DockingServer/input/**/*.tar
 DockingServer/input/**/*.zip

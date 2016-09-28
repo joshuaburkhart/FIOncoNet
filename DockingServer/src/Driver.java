@@ -28,8 +28,6 @@ public class Driver {
     final int POS_FEAT_IDX = 4;
     final String LOG_FILE_PATH = OUT_DIR + "log.txt";
 
-    FileParser dockingScheduleParser;
-    IFile dockingSchedule;
     ILogger logger;
 
     public Driver(String[] args){
@@ -100,10 +98,10 @@ public class Driver {
                                                         uniprot2 + ", " +
                                                         gene1 + ", " +
                                                         gene2 + ", ");
+                    //these genes & isoforms should be in a map
                     Gene g1 = new Gene(gene1,uniprot1);
                     Gene g2 = new Gene(gene2,uniprot2);
-
-                    //create a docking job object -- add to lib that includes an input and output path
+                    //create primar isoform -- with uniprot? genes?
                 }
             }
         }catch(FileNotFoundException fnf){
@@ -115,6 +113,8 @@ public class Driver {
         }
 
         //log schedule
+        //parse model_data.dat and add pdb paths to primary isoforms in map
+        //create a docking job objects -- add to lib that includes an input and output path
         //each protein pair
             long dockingStartTime = System.currentTimeMillis();
             //log protein pair -- include start time
