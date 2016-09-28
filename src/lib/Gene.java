@@ -8,15 +8,25 @@ import java.util.HashSet;
  */
 public class Gene extends Entity implements IGene {
     private String geneSymbol;
+    private String uniprot;
     private IIsoform principleIsoform;
     private Collection<IVariant> variants;
 
     public Gene(String geneSymbol){
-        this.geneSymbol = geneSymbol;
+        this(geneSymbol,null,null);
+    }
+
+    public Gene(String geneSymbol, String uniprot){
+        this(geneSymbol,null,uniprot);
     }
 
     public Gene(String geneSymbol, Collection<IVariant> variants){
+        this(geneSymbol,variants,null);
+    }
+
+    public Gene(String geneSymbol, Collection<IVariant> variants, String uniprot){
         this.geneSymbol = geneSymbol;
+        this.uniprot = uniprot;
         this.variants = variants;
         this.children = new HashSet<>();
         this.children.addAll(variants);
@@ -25,6 +35,11 @@ public class Gene extends Entity implements IGene {
     @Override
     public String GetGeneSymbol() {
         return this.geneSymbol;
+    }
+
+    @Override
+    public String GetUniprot() {
+        return this.uniprot;
     }
 
     @Override

@@ -1,5 +1,11 @@
 # Project Files
 .idea/*
+dep/*
+
+# Hidden files
+.fuse*
+**/*~
+**/*.DS_Store
 
 # Data
 data/intact/xml/*
@@ -14,3 +20,13 @@ build/
 
 # Log Files
 log/*.log.txt
+
+# Temporary hex files
+DockingServer/hex/hex-tmp-8.0.0/*
+
+# Docking Server Input
+DockingServer/input/__MACOSX/*
+DockingServer/input/**/*.pdb
+DockingServer/input/**/*.tar
+DockingServer/input/**/*.zip
+DockingServer/input/**/*.dat

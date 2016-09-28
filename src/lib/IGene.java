@@ -7,6 +7,7 @@ import java.util.Collection;
  */
 public interface IGene extends IEntity {
     String GetGeneSymbol();
+    String GetUniprot();
     void SetVariants(Collection<IVariant> variants);
     Collection<IVariant> GetVariants();
     IIsoform GetPrincipleIsoform();
