@@ -8,14 +8,20 @@ import java.util.HashSet;
  */
 public class Isoform extends Entity implements IIsoform {
     private IGene gene;
+    private String pdbPath;
     private Collection<IPairwiseInteraction> pairwiseInteractions;
 
     public Isoform(IGene gene){
+        this(gene,null);
+    }
+
+    public Isoform(IGene gene, String pdbPath){
         this.gene = gene;
         this.pairwiseInteractions = new HashSet<>();
         this.parents = new HashSet<>();
         this.children = new HashSet<>();
         this.children.add(gene);
+        this.pdbPath = pdbPath;
     }
 
     @Override
@@ -26,6 +32,11 @@ public class Isoform extends Entity implements IIsoform {
     @Override
     public String GetGeneSymbol() {
         return this.gene.GetGeneSymbol();
+    }
+
+    @Override
+    public String GetPdbPath() {
+        return this.pdbPath;
     }
 
     @Override

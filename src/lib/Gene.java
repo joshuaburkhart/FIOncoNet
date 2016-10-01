@@ -8,38 +8,25 @@ import java.util.HashSet;
  */
 public class Gene extends Entity implements IGene {
     private String geneSymbol;
-    private String uniprot;
     private IIsoform principleIsoform;
     private Collection<IVariant> variants;
 
     public Gene(String geneSymbol){
-        this(geneSymbol,null,null);
-    }
-
-    public Gene(String geneSymbol, String uniprot){
-        this(geneSymbol,null,uniprot);
+        this(geneSymbol,null);
     }
 
     public Gene(String geneSymbol, Collection<IVariant> variants){
-        this(geneSymbol,variants,null);
-    }
-
-    public Gene(String geneSymbol, Collection<IVariant> variants, String uniprot){
         this.geneSymbol = geneSymbol;
-        this.uniprot = uniprot;
         this.variants = variants;
         this.children = new HashSet<>();
-        this.children.addAll(variants);
+        if(variants != null) {
+            this.children.addAll(variants);
+        }
     }
 
     @Override
     public String GetGeneSymbol() {
         return this.geneSymbol;
-    }
-
-    @Override
-    public String GetUniprot() {
-        return this.uniprot;
     }
 
     @Override
@@ -66,6 +53,14 @@ public class Gene extends Entity implements IGene {
            this.parents = new HashSet<>();
            this.parents.add(isoform);
        }
+    }
+
+    @Override
+    public boolean Equals(IGene gene) {
+        return gene != null &&
+                this.geneSymbol != null &&
+                gene.GetGeneSymbol().toUpperCase().trim() ==
+                this.geneSymbol.toUpperCase().trim();
     }
 
     @Override

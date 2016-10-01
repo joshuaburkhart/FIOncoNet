@@ -21,11 +21,19 @@ build/
 # Log Files
 log/*.log.txt
 
+# Reports
+reports/*
+
 # Temporary hex files
 DockingServer/hex/hex-tmp-8.0.0/*
+DockingServer/hex/*.swp
 
 # Docking Server Input
 DockingServer/input/**/*.pdb
 DockingServer/input/**/*.tar
 DockingServer/input/**/*.zip
 DockingServer/input/**/*.dat
+DockingServer/input/reaction_5672965/.sass-cache/*
+
+# Docking Server Output
+DockingServer/output/*

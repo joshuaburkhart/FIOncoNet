@@ -8,6 +8,7 @@ import java.util.Collection;
 public interface IIsoform extends IEntity {
     Collection<IDomain> GetDomains();
     String GetGeneSymbol();
+    String GetPdbPath();
     void AddPairwiseInteraction(IPairwiseInteraction pairwiseInteraction);
     Collection<IPairwiseInteraction> GetPairwiseInteractions();
     IGene GetGene();

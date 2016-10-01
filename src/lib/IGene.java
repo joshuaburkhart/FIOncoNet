@@ -7,9 +7,9 @@ import java.util.Collection;
  */
 public interface IGene extends IEntity {
     String GetGeneSymbol();
-    String GetUniprot();
     void SetVariants(Collection<IVariant> variants);
     Collection<IVariant> GetVariants();
     IIsoform GetPrincipleIsoform();
     void SetPrincipleIsoform(IIsoform isoform);
+    boolean Equals(IGene gene);
 }
