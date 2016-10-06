@@ -1,0 +1,13 @@
+Hi Josh,
+
+Here is the link for the class I used for protein contact analysis:
+
+https://www.dropbox.com/s/lm7rkllkuqruq02/BioJavaStructure.zip?dl=0
+
+I have also zipped all required jar files for this class. You can see the class is copied from a huge project, which is very messy. You can pick up methods related to what you need, most extractContacts(Structure).
+
+For an example how to use, please see method checkInterfaces().
+
+Thanks,
+
+Guanming
