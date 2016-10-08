@@ -12,10 +12,9 @@ import static org.apache.poi.ss.usermodel.WorkbookFactory.*;
  * Created by burkhart on 9/28/16.
  */
 public class DockingServerDriver {
-    final String PROJECT_DIR = "/home/burkhart/Software/FIOncoNet/DockingServer/";
     final String REACTION = "reaction_5672965";
-    final String IN_DIR = PROJECT_DIR + "input/" + REACTION + "/";
-    final String OUT_DIR = PROJECT_DIR + "output/";
+    final String IN_DIR = "input/" + REACTION + "/";
+    final String OUT_DIR = "output/";
     final String PDB_DIR = IN_DIR + "pdb/";
     final String DOCKING_SCHEDULE = IN_DIR + "docking_schedule.xlsx";
     final java.lang.String UNIPROT_PDB_MAP = IN_DIR + "model_data.dat";
@@ -65,7 +64,7 @@ public class DockingServerDriver {
         }
 
         //log file & directory paths
-        this.logger.Log(LoggingLevel.INFO,"Project Directory: " + PROJECT_DIR);
+        this.logger.Log(LoggingLevel.INFO,"Project Directory: " + System.getProperty("user.dir"));
         this.logger.Log(LoggingLevel.INFO,"Input Directory: " + IN_DIR);
         this.logger.Log(LoggingLevel.INFO,"Output Directory: " + OUT_DIR);
         this.logger.Log(LoggingLevel.INFO,"Pdb directory: " + PDB_DIR);

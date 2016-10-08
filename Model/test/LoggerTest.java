@@ -1,9 +1,5 @@
-package test;
 
 import junit.framework.TestCase;
-import ILogger;
-import Logger;
-import LoggingLevel;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,7 +10,7 @@ import java.io.File;
  */
 public class LoggerTest extends TestCase {
     private ILogger logger;
-    private static String TEST_LOG_FN = "src/test/log/LoggerTest.log.txt";
+    private static String TEST_LOG_FN = "LoggerTest.log.txt";
 
     protected void setUp(){
         this.logger = new Logger(TEST_LOG_FN, LoggingLevel.INFO);
