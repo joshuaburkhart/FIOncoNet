@@ -3,7 +3,7 @@
 Hex 8.0.0 starting at Wed Sep 28 08:11:03 2016 on host nyx.
 
 Hostname:        nyx
-Main memory:     16044 Mb
+ClientMain memory:     16044 Mb
 CPUs online:     8
 GPUs online:     0
 Compute threads: 4
