@@ -133,7 +133,7 @@ public class EntityNetworkBuilder implements IEntityNetworkBuilder {
 
     @Override
     public void AddDisconnectedVariants(IDataSourceReader dataSourceReader, IDataSource variantDataSource) {
-        if (variantDataSource instanceof File) {
+        if (variantDataSource instanceof TextFile) {
             this.variants.addAll(
                     dataSourceReader.Read(variantDataSource));
         }
@@ -142,7 +142,7 @@ public class EntityNetworkBuilder implements IEntityNetworkBuilder {
 
     @Override
     public void AddDisconnectedPairwiseInteractions(IDataSourceReader dataSourceReader, IDataSource pairwiseInteractionDataSource) {
-        if (pairwiseInteractionDataSource instanceof File) {
+        if (pairwiseInteractionDataSource instanceof TextFile) {
             this.pairwiseInteractions.addAll(
                     dataSourceReader.Read(pairwiseInteractionDataSource));
         }

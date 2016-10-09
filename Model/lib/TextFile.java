@@ -8,11 +8,11 @@ import java.util.Collection;
 /**
  * Created by burkhart on 6/29/16.
  */
-public abstract class File implements IFile {
+public abstract class TextFile implements ITextFile {
     final String filePath;
     ILogger logger;
 
-    public File(String filePath, ILogger logger) {
+    public TextFile(String filePath, ILogger logger) {
         this.filePath = filePath;
         this.logger = logger;
     }

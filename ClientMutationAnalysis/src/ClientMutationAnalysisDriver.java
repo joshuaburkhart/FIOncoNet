@@ -6,26 +6,27 @@ import java.util.HashSet;
 /**
  * Created by burkhart on 6/12/16.
  */
-public class ClientDriver {
+public class ClientMutationAnalysisDriver {
+    final String LOG_FILE_PATH = "log/ClientMutationAnalysis.log.txt";
 
     ExecutionState execState;
-    Collection<IFile> variantFiles;
-    FileParser variantFileParser;
-    FileParser pairwiseInteractionFileParser;
-    Collection<IFile> pairwiseInteractionFiles;
+    Collection<ITextFile> variantFiles;
+    TextFileParser variantFileParser;
+    TextFileParser pairwiseInteractionFileParser;
+    Collection<ITextFile> pairwiseInteractionFiles;
     IReportGenerator reportGenerator;
     IEntityNetworkBuilder entityNetworkBuilder;
     ILogger logger;
     IFilter filter;
 
-    public ClientDriver(String[] args){
+    public ClientMutationAnalysisDriver(String[] args){
         /*
         IOptions options = OptionParser.parse(args);
         this.logger = new Logger(options.logging_options);
         this.reportGenerator = new ReportGenerator(options.reporting_options);
         this.execState = ExecutionStateModel.state(options.studies, options.variant_files, options.external_database_files);
          */
-        this.logger = new Logger(null,LoggingLevel.INFO);
+        this.logger = new Logger(LOG_FILE_PATH,LoggingLevel.INFO);
         this.execState = ExecutionState.SingleGroup;
         this.variantFiles = new HashSet<>();
         this.variantFiles.add(new MutationAnnotationFile("data/variants/IDC_lumA_dnaseq.maf",this.logger));
@@ -47,12 +48,12 @@ public class ClientDriver {
                 Collection<IEntity> pairwiseInteractions;
 
                 this.logger.Log(LoggingLevel.INFO,"add variants to builder");
-                for(IFile variantFile : variantFiles) {
+                for(ITextFile variantFile : variantFiles) {
                     this.entityNetworkBuilder.AddDisconnectedVariants(variantFileParser, variantFile);
                 }
 
                 this.logger.Log(LoggingLevel.INFO,"add pairwise interactions to builder");
-                for(IFile pairwiseInteractionDataFile : pairwiseInteractionFiles) {
+                for(ITextFile pairwiseInteractionDataFile : pairwiseInteractionFiles) {
                     this.entityNetworkBuilder.AddDisconnectedPairwiseInteractions(pairwiseInteractionFileParser, pairwiseInteractionDataFile);
                 }
 

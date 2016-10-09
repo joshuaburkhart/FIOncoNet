@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 /**
  * Created by burkhart on 6/7/16.
  */
-public class VCFFileParser extends FileParser {
+public class VCFFileParser extends TextFileParser {
 
     private static String VCF_VARIANT_PARAMETER_CAPTURE = "^(?<chrom>[^#\\s]+)\\s+(?<pos>[^\\s]+)\\s+(?<id>[^\\s]+)\\s+(?<ref>[^\\s]+)\\s+(?<alt>[^\\s]+)\\s+(?<qual>[^\\s]+)\\s+(?<filter>[^\\s]+).*";
     private static String VCF_ALT_CAPTURE = "([^,\\s]+)";
@@ -32,7 +32,7 @@ public class VCFFileParser extends FileParser {
     }
 
     @Override
-    public Collection<IEntity> ParseEntitiesFromFile(IFile variantFile) {
+    public Collection<IEntity> ParseEntitiesFromFile(ITextFile variantFile) {
         if (ReferenceGenomeMatchesVariantFile()) {
             Collection<IEntity> variants = new HashSet<>();
 

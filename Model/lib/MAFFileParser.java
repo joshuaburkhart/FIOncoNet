@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 /**
  * Created by burkhart on 7/3/16.
  */
-public class MAFFileParser extends FileParser {
+public class MAFFileParser extends TextFileParser {
     private static String MAF_VARIANT_PARAMETER_CAPTURE = "^(?<geneSymbol>[^\\s]+)\\s+[^\\s]+\\s+[^\\s]+\\s+(?<NCBIBuild>[^\\s]+)\\s+(?<chrom>[^\\s]+)\\s+(?<startPos>[0-9]+)\\s+(?<endPos>[0-9]+)\\s+[^\\s]+\\s+[^\\s]+\\s+[^\\s]+\\s+(?<ref>[^\\s]+)\\s+(?<altAllele1>[^\\s]+)\\s+(?<altAllele2>[^\\s]+).*";
     private static String GENE_SYMBOL = "geneSymbol";
     private static String NCBI_BUILD = "NCBIBuild";
@@ -25,7 +25,7 @@ public class MAFFileParser extends FileParser {
     }
 
     @Override
-    public Collection<IEntity> ParseEntitiesFromFile(IFile variantFile) {
+    public Collection<IEntity> ParseEntitiesFromFile(ITextFile variantFile) {
         Collection<IEntity> variants = new HashSet<>();
 
         for (String line : variantFile.GetLines()) {

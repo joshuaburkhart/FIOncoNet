@@ -1,5 +1,5 @@
 /**
  * Created by burkhart on 6/29/16.
  */
-public interface IPairwiseInteractionFile extends IFile {
+public interface IPairwiseInteractionFile extends ITextFile {
 }

@@ -7,14 +7,9 @@ import static org.junit.Assert.*;
 /**
  * Created by burkhart on 8/10/16.
  */
-public class ReactomeFIFileParserTest {
+public class TextFileParserTest {
     @Test
     public void parseEntitiesFromFile() throws Exception {
-
-    }
-
-    @Test
-    public void parseEntitiesFromFile1() throws Exception {
 
     }
 

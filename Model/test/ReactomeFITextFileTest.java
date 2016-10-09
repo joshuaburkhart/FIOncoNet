@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by burkhart on 8/10/16.
  */
-public class ReactomeFIFileTest {
+public class ReactomeFITextFileTest {
     @Test
     public void getLines() throws Exception {
 

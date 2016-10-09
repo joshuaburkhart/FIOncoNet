@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 /**
  * Created by burkhart on 6/29/16.
  */
-public class ReactomeFIFileParser extends FileParser {
+public class ReactomeFIFileParser extends TextFileParser {
     private static String REACTOME_FI_PAIRWISE_INTERACTION_CAPTURE = "^(?<gene1>[^\\t]+)\\t+(?<gene2>[^\\t]+)\\t+(?<annotation>[^\\t]+)\\t+(?<direction>[^\\t]+)\\t+(?<score>[0-9.]+).*";
     private static String GENE1 = "gene1";
     private static String GENE2 = "gene2";
@@ -22,7 +22,7 @@ public class ReactomeFIFileParser extends FileParser {
     }
 
     @Override
-    public Collection<IEntity> ParseEntitiesFromFile(IFile pairwiseInteractionFile) {
+    public Collection<IEntity> ParseEntitiesFromFile(ITextFile pairwiseInteractionFile) {
         Collection<IEntity> pairwiseInteractions = new HashSet<>();
 
         for (String line : pairwiseInteractionFile.GetLines()) {
