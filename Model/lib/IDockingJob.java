@@ -15,7 +15,10 @@ public interface IDockingJob extends IEntity{
     File Subdirectory();
 
     void CreateOutputDirectory();
-    String StructurePath();
+    String StructureNamePath();
+    int getDockingRangeMax();
+    int getDockingRangeMin();
+    String getDockingFileExt();
     String CreateHexMacro();
     String CreateHexShellScript(String hexExePath, String macPath);
     void ExecuteShellScript(String shellPath);

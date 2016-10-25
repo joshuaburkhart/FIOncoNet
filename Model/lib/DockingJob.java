@@ -13,6 +13,9 @@ public class DockingJob extends Entity implements IDockingJob {
     private String parentDirectory;
     private String shortName;
     private File subdirectory;
+    private int DOCKING_RANGE_MIN = 1;
+    private int DOCKING_RANGE_MAX = 10;
+    private String DOCKING_FILE_EXT = "pdb";
 
     public DockingJob(IIsoform isoformR, IIsoform isoformL,ILogger logger,String parentDirectory) {
         this.logger = logger;
@@ -87,9 +90,22 @@ public class DockingJob extends Entity implements IDockingJob {
     }
 
     @Override
-    public String StructurePath() {
-        return this.Subdirectory().getPath() + "/" + this.getShortName() + ".pdb.gz";
+    public int getDockingRangeMax(){
+        return this.DOCKING_RANGE_MAX;
     }
+
+    @Override
+    public int getDockingRangeMin(){
+        return this.DOCKING_RANGE_MIN;
+    }
+
+    @Override
+    public String getDockingFileExt(){
+        return this.DOCKING_FILE_EXT;
+    }
+
+    @Override
+    public String StructureNamePath() { return this.Subdirectory().getPath() + "/" + this.getShortName(); }
 
     @Override
     public String CreateHexMacro() {
@@ -97,7 +113,10 @@ public class DockingJob extends Entity implements IDockingJob {
                 "open_receptor " + this.isoformR.GetPdbPath() + "\n" +
                 "open_ligand " + this.isoformL.GetPdbPath() + "\n" +
                 "activate_docking\n" +
-                "save_both " + this.StructurePath() + "\n";
+                "save_range " + this.DOCKING_RANGE_MIN + " " +
+                                this.DOCKING_RANGE_MAX + " " +
+                                this.StructureNamePath() + " " +
+                                this.DOCKING_FILE_EXT + "\n";
 
         //log .mac file
         this.logger.Log(LoggingLevel.INFO,"Writing Macro:");
@@ -118,7 +137,7 @@ public class DockingJob extends Entity implements IDockingJob {
         //set hex log path
         String hexLogPath = this.Subdirectory().getPath() + "/hex_log.txt";
         //create shell command
-        String shellText = hexExePath + " -ncpu 4 <" + macPath + " >" + hexLogPath;
+        String shellText = hexExePath + " -ncpu 7 <" + macPath + " >" + hexLogPath;
         //log shell command
         this.logger.Log(LoggingLevel.INFO,"Writing Shell Command: " + shellText);
         String shellPath = this.Subdirectory().getPath() + "/hex_shell.sh";

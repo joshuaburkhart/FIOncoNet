@@ -19,7 +19,7 @@ data/variants/IDC_lumA_dnaseq.maf
 build/
 
 # Log Files
-log/*.log.txt
+DockingServer/log/*.log.txt
 
 # Reports
 reports/*

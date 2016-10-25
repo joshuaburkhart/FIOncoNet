@@ -68,17 +68,22 @@ public class ClientStructureAnalysisDriver {
         for(IEntity entity:scheduled_jobs) {
             IDockingJob job = (IDockingJob) entity;
 
-            try {
-                Structure structure = StructureIO.getStructure(job.StructurePath());
+            for (int i = job.getDockingRangeMin(); i <= job.getDockingRangeMax(); i++) {
+                String dockingNumberString = String.format("%03d", i);
+                try {
+                    Structure structure = StructureIO.getStructure(job.StructureNamePath() +
+                                                                   dockingNumberString +
+                                                                   "." + job.getDockingFileExt());
 
-                //extract interface
-                structureInterfaces.add(new StructureInterface(this.logger,structure,job.getShortName()));
-            } catch (IOException ioe) {
-                this.logger.Log(LoggingLevel.ERROR,"io exception getting structure",ioe);
-            } catch (StructureException se) {
-                this.logger.Log(LoggingLevel.ERROR,"structure exception getting structure",se);
-            } catch (IllegalArgumentException iae){
-                this.logger.Log(LoggingLevel.ERROR,"illegal argument getting structure",iae);
+                    //extract interface
+                    structureInterfaces.add(new StructureInterface(this.logger, structure, job.getShortName() + dockingNumberString));
+                } catch (IOException ioe) {
+                    this.logger.Log(LoggingLevel.ERROR, "io exception getting structure", ioe);
+                } catch (StructureException se) {
+                    this.logger.Log(LoggingLevel.ERROR, "structure exception getting structure", se);
+                } catch (IllegalArgumentException iae) {
+                    this.logger.Log(LoggingLevel.ERROR, "illegal argument getting structure", iae);
+                }
             }
         }
         //data like: complex name, res A/B, len A/B, seq A/B, seq length A/B

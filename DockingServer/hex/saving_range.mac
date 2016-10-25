@@ -1,0 +1,4 @@
+save_range 1 10 /tmp/ dock pdb
+session_log 1
+activate_docking
+save_range 1 10 /tmp/ dock pdb
