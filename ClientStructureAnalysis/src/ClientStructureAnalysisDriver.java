@@ -71,9 +71,10 @@ public class ClientStructureAnalysisDriver {
             for (int i = job.getDockingRangeMin(); i <= job.getDockingRangeMax(); i++) {
                 String dockingNumberString = String.format("%03d", i);
                 try {
-                    Structure structure = StructureIO.getStructure(job.StructureNamePath() +
-                                                                   dockingNumberString +
-                                                                   "." + job.getDockingFileExt());
+                    Structure structure = StructureIO.getStructure(job.Subdirectory() + "/" +
+                                                                   job.getShortName() +
+                                                                   dockingNumberString + "." +
+                                                                   job.getDockingFileExt());
 
                     //extract interface
                     structureInterfaces.add(new StructureInterface(this.logger, structure, job.getShortName() + dockingNumberString));

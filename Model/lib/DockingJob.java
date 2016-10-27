@@ -105,9 +105,6 @@ public class DockingJob extends Entity implements IDockingJob {
     }
 
     @Override
-    public String StructureNamePath() { return this.Subdirectory().getPath() + "/" + this.getShortName(); }
-
-    @Override
     public String CreateHexMacro() {
         String macText =
                 "open_receptor " + this.isoformR.GetPdbPath() + "\n" +
@@ -115,7 +112,8 @@ public class DockingJob extends Entity implements IDockingJob {
                 "activate_docking\n" +
                 "save_range " + this.DOCKING_RANGE_MIN + " " +
                                 this.DOCKING_RANGE_MAX + " " +
-                                this.StructureNamePath() + " " +
+                                this.Subdirectory().getPath() + " " +
+                                this.getShortName() + " " +
                                 this.DOCKING_FILE_EXT + "\n";
 
         //log .mac file

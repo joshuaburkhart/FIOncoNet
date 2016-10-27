@@ -15,7 +15,6 @@ public interface IDockingJob extends IEntity{
     File Subdirectory();
 
     void CreateOutputDirectory();
-    String StructureNamePath();
     int getDockingRangeMax();
     int getDockingRangeMin();
     String getDockingFileExt();
