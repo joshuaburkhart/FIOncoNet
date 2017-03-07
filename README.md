@@ -1,4 +1,4 @@
-# FIOncoNet
+# FIOncoNet [![DOI](https://zenodo.org/badge/58220482.svg)](https://zenodo.org/badge/latestdoi/58220482)
 using network comparison techniques to understand oncogenic mutations
 
 ## Java Implementation
